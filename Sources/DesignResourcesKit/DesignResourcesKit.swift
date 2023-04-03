@@ -124,27 +124,88 @@ public extension UIFont {
     }
 }
 
-/*
- 
- title1 (bold)
- title2 (bold)
- title3 (bold)
- headline
- body (callout) reg/bold. Callout is same as reg
- subhead semibold
- subhead regular, subhead same as reb
- button size and leading as the system subhead (different weight), so could be based on that.
- footnote regular/semibold
- caption Caption is also slightly different to both systems styles caption 1 and caption 2, in both size and leading. This is the only one that might need custom leading, although if we base it on caption 2 it may be correct.
- 
- The following have different weights
- title 1, title 2, title 3
- callout has two styles, one is the  same, one is bold
- same for subhead
- Body (callout) is same size and leading as the system callout, (slightly different to system body)
- Button is not based on a system style, but is the size and leading as the system subhead (different weight), so could be based on that.
- Caption is also slightly different to both systems styles caption 1 and caption 2, in both size and leading. This is the only one that might need custom leading, although if we base it on caption 2 it may be correct.
- 
- */
+public struct DaxTitle1: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxTitle1()))
+    }
+}
+
+public struct DaxTitle2: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxTitle2()))
+    }
+}
+
+public struct DaxTitle3: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxTitle3()))
+    }
+}
+
+public struct DaxHeadline: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxHeadline()))
+    }
+}
+
+public struct DaxBodyRegular: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxBodyRegular()))
+    }
+}
+
+public struct DaxBodyBold: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxBodyBold()))
+    }
+}
+
+public struct DaxSubheadRegular: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxSubheadRegular()))
+    }
+}
+
+public struct DaxSubheadSemibold: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxSubheadSemibold()))
+    }
+}
+
+public struct DaxButton: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxButton()))
+    }
+}
+
+public struct DaxFootnoteRegular: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxFootnoteRegular()))
+    }
+}
+
+public struct daxFootnoteSemibold: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxFootnoteSemibold()))
+    }
+}
+
+public struct DaxCaption: ViewModifier {
+    public func body(content: Content) -> some View {
+        content
+            .font(Font(uiFont: UIFont.daxCaption()))
+    }
+}
 
 #endif
