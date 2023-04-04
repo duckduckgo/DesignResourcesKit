@@ -8,5 +8,5 @@ Any changes to the actual content of this package (e.g. values or names of color
 If a design contains typography or colors not in this package, they should either be changed to use something in this package, or those new colors/type styles should be added fully to the design system.
   
 ## License
-DuckDuckGo is distributed under the Apache 2.0 [license](https://github.com/duckduckgo/ios/blob/master/LICENSE.md).
+DuckDuckGo is distributed under the Apache 2.0 [license](https://github.com/duckduckgo/DesignResourcesKit/blob/main/LICENSE).
 
