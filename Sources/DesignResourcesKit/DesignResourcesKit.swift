@@ -71,7 +71,7 @@ public extension UIFont {
         return UIFont.preferredFont(forTextStyle: .headline)
     }
     
-    static func daxBodyRegular() -> UIfont {
+    static func daxBodyRegular() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .callout)
     }
     
@@ -82,7 +82,7 @@ public extension UIFont {
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    static func daxSubheadRegular() -> UIfont {
+    static func daxSubheadRegular() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .subheadline)
     }
     
@@ -100,7 +100,7 @@ public extension UIFont {
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    static func daxFootnoteRegular() -> UIfont {
+    static func daxFootnoteRegular() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .footnote)
     }
     
