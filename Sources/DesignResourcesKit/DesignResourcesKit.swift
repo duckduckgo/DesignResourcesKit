@@ -46,78 +46,78 @@ import UIKit
 
 public extension UIFont {
     
-    public static func daxTitle1() -> UIFont {
+    static func daxTitle1() -> UIFont {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .title1)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .bold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.bold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxTitle2() -> UIFont {
+    static func daxTitle2() -> UIFont {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .title2)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .bold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.bold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxTitle3() -> UIFont {
+    static func daxTitle3() -> UIFont {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .title3)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .bold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.bold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxHeadline() -> UIFont {
+    static func daxHeadline() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .headline)
     }
     
-    public static func daxBodyRegular() -> UIfont {
+    static func daxBodyRegular() -> UIfont {
         return UIFont.preferredFont(forTextStyle: .callout)
     }
     
-    public static func daxBodyBold() -> UIFont {
+    static func daxBodyBold() -> UIFont {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .callout)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .bold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.bold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxSubheadRegular() -> UIfont {
-        return UIFont.preferredFont(forTextStyle: .subhead)
+    static func daxSubheadRegular() -> UIfont {
+        return UIFont.preferredFont(forTextStyle: .subheadline)
     }
     
-    public static func daxSubheadSemibold() -> UIFont {
-        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .subhead)
+    static func daxSubheadSemibold() -> UIFont {
+        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .subheadline)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .semibold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.semibold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxButton() -> UIFont {
-        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .subhead)
+    static func daxButton() -> UIFont {
+        let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .subheadline)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .bold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.bold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxFootnoteRegular() -> UIfont {
+    static func daxFootnoteRegular() -> UIfont {
         return UIFont.preferredFont(forTextStyle: .footnote)
     }
     
-    public static func daxFootnoteSemibold() -> UIFont {
+    static func daxFootnoteSemibold() -> UIFont {
         let descriptor = UIFontDescriptor.preferredFontDescriptor(withTextStyle: .footnote)
         let newDescriptor = descriptor.addingAttributes([.traits: [
-            UIFontDescriptor.TraitKey.weight: .semibold]])
+            UIFontDescriptor.TraitKey.weight: UIFont.Weight.semibold]])
         return UIFont(descriptor: newDescriptor, size: descriptor.pointSize)
     }
     
-    public static func daxCaption() -> UIfont {
+    static func daxCaption() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .caption2)
     }
     
     //TODO delete if unused
     @available(*, deprecated)
-    public static func daxFontOutsideOfTheDesignSystemToFixLegacyLayoutBreakage(ofSize size: CGFloat, weight: UIFont.Weight) -> UIFont {
+    static func daxFontOutsideOfTheDesignSystemToFixLegacyLayoutBreakage(ofSize size: CGFloat, weight: UIFont.Weight) -> UIFont {
         UIFont.systemFont(ofSize: size, weight: weight)
     }
 }
@@ -125,84 +125,84 @@ public extension UIFont {
 public struct DaxTitle1: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxTitle1()))
+            .font(Font(UIFont.daxTitle1()))
     }
 }
 
 public struct DaxTitle2: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxTitle2()))
+            .font(Font(UIFont.daxTitle2()))
     }
 }
 
 public struct DaxTitle3: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxTitle3()))
+            .font(Font(UIFont.daxTitle3()))
     }
 }
 
 public struct DaxHeadline: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxHeadline()))
+            .font(Font(UIFont.daxHeadline()))
     }
 }
 
 public struct DaxBodyRegular: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxBodyRegular()))
+            .font(Font(UIFont.daxBodyRegular()))
     }
 }
 
 public struct DaxBodyBold: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxBodyBold()))
+            .font(Font(UIFont.daxBodyBold()))
     }
 }
 
 public struct DaxSubheadRegular: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxSubheadRegular()))
+            .font(Font(UIFont.daxSubheadRegular()))
     }
 }
 
 public struct DaxSubheadSemibold: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxSubheadSemibold()))
+            .font(Font(UIFont.daxSubheadSemibold()))
     }
 }
 
 public struct DaxButton: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxButton()))
+            .font(Font(UIFont.daxButton()))
     }
 }
 
 public struct DaxFootnoteRegular: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxFootnoteRegular()))
+            .font(Font(UIFont.daxFootnoteRegular()))
     }
 }
 
 public struct daxFootnoteSemibold: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxFootnoteSemibold()))
+            .font(Font(UIFont.daxFootnoteSemibold()))
     }
 }
 
 public struct DaxCaption: ViewModifier {
     public func body(content: Content) -> some View {
         content
-            .font(Font(uiFont: UIFont.daxCaption()))
+            .font(Font(UIFont.daxCaption()))
     }
 }
 
