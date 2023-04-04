@@ -20,11 +20,9 @@
 import Foundation
 import SwiftUI
 
-/// After importing Common you can access this with `Common.bundle`
-/// unsure if I need this, but would mean no changes required if split up targets?
+/// Unsure if I need this, but would mean no changes required if split up targets?
 public let bundle = Bundle.module
 
-//TODO wait on answer if they should be defined with opacity
 public enum DesignSystemColor: String {
     case panel
     case background
