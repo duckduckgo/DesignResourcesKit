@@ -46,8 +46,8 @@ public extension Color {
 import UIKit
 
 public extension UIColor {
-    init(designSystemColor: DesignSystemColor) {
-        self.init(named: designSystemColor.rawValue, in: bundle)
+    convenience init(designSystemColor: DesignSystemColor) {
+        self.init(named: designSystemColor.rawValue, in: bundle, compatibleWith: nil)
     }
 }
 
