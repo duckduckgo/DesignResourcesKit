@@ -45,6 +45,12 @@ public extension Color {
 
 import UIKit
 
+public extension UIColor {
+    init(designSystemColor: DesignSystemColor) {
+        self.init(named: designSystemColor.rawValue, in: bundle)
+    }
+}
+
 public extension UIFont {
     
     static func daxTitle1() -> UIFont {
