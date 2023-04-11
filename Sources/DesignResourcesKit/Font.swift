@@ -91,12 +91,6 @@ public extension UIFont {
     static func daxCaption() -> UIFont {
         return UIFont.preferredFont(forTextStyle: .caption2)
     }
-    
-    //TODO delete if unused
-    @available(*, deprecated)
-    static func daxFontOutsideOfTheDesignSystemToFixLegacyLayoutBreakage(ofSize size: CGFloat, weight: UIFont.Weight) -> UIFont {
-        UIFont.systemFont(ofSize: size, weight: weight)
-    }
 }
 
 #endif
