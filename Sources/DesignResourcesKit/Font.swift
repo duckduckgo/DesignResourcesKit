@@ -1,5 +1,5 @@
 //
-//  DesignResourcesKit.swift
+//  Font.swift
 //
 //  Copyright © 2023 DuckDuckGo. All rights reserved.
 //
@@ -16,40 +16,10 @@
 //  limitations under the License.
 //
 
-
 import Foundation
 import SwiftUI
 
-/// Unsure if I need this, but would mean no changes required if split up targets?
-public let bundle = Bundle.module
-
-public enum DesignSystemColor: String {
-    case panel
-    case background
-    case surface
-    case container
-    case textPrimary
-    case textSecondary
-    case lines
-    case accent
-    case icons
-}
-
-public extension Color {
-    init(designSystemColor: DesignSystemColor) {
-        self.init(designSystemColor.rawValue, bundle: bundle)
-    }
-}
-
 #if canImport(UIKit)
-
-import UIKit
-
-public extension UIColor {
-    convenience init(designSystemColor: DesignSystemColor) {
-        self.init(named: designSystemColor.rawValue, in: bundle, compatibleWith: nil)!
-    }
-}
 
 public extension UIFont {
     
@@ -126,140 +96,6 @@ public extension UIFont {
     @available(*, deprecated)
     static func daxFontOutsideOfTheDesignSystemToFixLegacyLayoutBreakage(ofSize size: CGFloat, weight: UIFont.Weight) -> UIFont {
         UIFont.systemFont(ofSize: size, weight: weight)
-    }
-}
-
-public struct DaxTitle1: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxTitle1()))
-    }
-}
-
-public struct DaxTitle2: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxTitle2()))
-    }
-}
-
-public struct DaxTitle3: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxTitle3()))
-    }
-}
-
-public struct DaxHeadline: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxHeadline()))
-    }
-}
-
-public struct DaxBodyRegular: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxBodyRegular()))
-    }
-}
-
-public struct DaxBodyBold: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxBodyBold()))
-    }
-}
-
-public struct DaxSubheadRegular: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxSubheadRegular()))
-    }
-}
-
-public struct DaxSubheadSemibold: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxSubheadSemibold()))
-    }
-}
-
-public struct DaxButton: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxButton()))
-    }
-}
-
-public struct DaxFootnoteRegular: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxFootnoteRegular()))
-    }
-}
-
-public struct DaxFootnoteSemibold: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxFootnoteSemibold()))
-    }
-}
-
-public struct DaxCaption: ViewModifier {
-    public func body(content: Content) -> some View {
-        content
-            .font(Font(UIFont.daxCaption()))
-    }
-}
-
-public extension View {
-    func daxTitle1() -> some View {
-        modifier(DaxTitle1())
-    }
-    
-    func daxTitle2() -> some View {
-        modifier(DaxTitle2())
-    }
-    
-    func daxTitle3() -> some View {
-        modifier(DaxTitle3())
-    }
-    
-    func daxHeadline() -> some View {
-        modifier(DaxHeadline())
-    }
-    
-    func daxBodyRegular() -> some View {
-        modifier(DaxBodyRegular())
-    }
-    
-    func daxBodyBold() -> some View {
-        modifier(DaxBodyBold())
-    }
-    
-    func daxSubheadRegular() -> some View {
-        modifier(DaxSubheadRegular())
-    }
-    
-    func daxSubheadSemibold() -> some View {
-        modifier(DaxSubheadSemibold())
-    }
-    
-    func daxButton() -> some View {
-        modifier(DaxButton())
-    }
-    
-    func daxFootnoteRegular() -> some View {
-        modifier(DaxFootnoteRegular())
-    }
-    
-    func daxFootnoteSemibold() -> some View {
-        modifier(DaxFootnoteSemibold())
-    }
-    
-    func daxCaption() -> some View {
-        modifier(DaxCaption())
     }
 }
 
