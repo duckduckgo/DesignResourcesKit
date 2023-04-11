@@ -199,7 +199,7 @@ public struct DaxFootnoteRegular: ViewModifier {
     }
 }
 
-public struct daxFootnoteSemibold: ViewModifier {
+public struct DaxFootnoteSemibold: ViewModifier {
     public func body(content: Content) -> some View {
         content
             .font(Font(UIFont.daxFootnoteSemibold()))
