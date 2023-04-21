@@ -5,8 +5,11 @@ import PackageDescription
 
 let package = Package(
     name: "DesignResourcesKit",
+    platforms: [
+        .iOS("14.0"),
+        .macOS("10.15")
+    ],
     products: [
-        // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "DesignResourcesKit",
             targets: ["DesignResourcesKit"]),
