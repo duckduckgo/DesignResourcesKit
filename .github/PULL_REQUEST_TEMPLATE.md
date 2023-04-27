@@ -31,6 +31,7 @@ https://github.com/duckduckgo/DesignResourcesKit/blob/main/README.md
 
 ---
 ###### Internal references:
-[Software Engineering Expectations](https://app.asana.com/0/59792373528535/199064865822552)
+[DesignResourcesKit documentation](https://app.asana.com/0/1202500774821704/1204423793264693/f) 
+[Software Engineering Expectations](https://app.asana.com/0/59792373528535/199064865822552) 
 [Technical Design Template](https://app.asana.com/0/59792373528535/184709971311943)
 **When ready for review, remember to post the PR in MM**
