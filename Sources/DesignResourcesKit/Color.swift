@@ -24,7 +24,6 @@ public let bundle = Bundle.module
 public enum DesignSystemColor: String {
     case panel
     case background
-    case base
     case surface
     case container
     case textPrimary
