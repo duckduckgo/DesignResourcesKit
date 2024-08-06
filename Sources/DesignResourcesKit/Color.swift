@@ -32,6 +32,7 @@ public enum DesignSystemColor: String {
     case lines
     case accent
     case icons
+    case alertGreen
 }
 
 public extension Color {
