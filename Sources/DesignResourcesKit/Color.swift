@@ -27,8 +27,10 @@ public enum DesignSystemColor: String {
     case backgroundSheets
     case surface
     case container
+    case textLink
     case textPrimary
     case textSecondary
+    case textSelectionFill
     case lines
     case accent
     case icons
