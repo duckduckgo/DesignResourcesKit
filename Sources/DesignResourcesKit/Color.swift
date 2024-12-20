@@ -41,9 +41,19 @@ public enum DesignSystemColor: String {
     case buttonsSecondaryFillPressed
 }
 
+/// When used multiple times, we should propose that these are promoted do design system.
+///
+public enum SingleUserColor: String {
+    case controlWidgetBackground
+}
+
 public extension Color {
     init(designSystemColor: DesignSystemColor) {
         self.init(designSystemColor.rawValue, bundle: bundle)
+    }
+
+    init(singleUseColor: SingleUserColor) {
+        self.init(singleUseColor.rawValue, bundle: bundle)
     }
 }
 
@@ -54,6 +64,10 @@ import UIKit
 public extension UIColor {
     convenience init(designSystemColor: DesignSystemColor) {
         self.init(named: designSystemColor.rawValue, in: bundle, compatibleWith: nil)!
+    }
+
+    convenience init(singleUseColor: SingleUserColor) {
+        self.init(named: singleUseColor.rawValue, in: bundle, compatibleWith: nil)!
     }
 }
 
