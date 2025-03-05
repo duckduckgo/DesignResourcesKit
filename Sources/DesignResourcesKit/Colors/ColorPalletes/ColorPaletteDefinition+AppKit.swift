@@ -28,6 +28,10 @@ extension ColorPaletteDefinition {
     static func nsColor(for singleUseColor: SingleUseColor) -> NSColor {
         dynamicColor(for: singleUseColor).nsColor
     }
+
+    static func nsColor(for baseColor: BaseColor) -> NSColor {
+        NSColor(color(for: baseColor))
+    }
 }
 
 #endif

@@ -25,14 +25,18 @@ protocol ColorPaletteDefinition {
     static func color(for designSystemColor: DesignSystemColor) -> Color
     static func color(for singleUseColor: SingleUseColor) -> Color
 
+    static func color(for baseColor: BaseColor) -> Color
+
 #if canImport(UIKit)
     static func uiColor(for designSystemColor: DesignSystemColor) -> UIColor
     static func uiColor(for singleUseColor: SingleUseColor) -> UIColor
+    static func uiColor(for baseColor: BaseColor) -> UIColor
 #endif
 
 #if canImport(AppKit)
     static func nsColor(for designSystemColor: DesignSystemColor) -> NSColor
     static func nsColor(for singleUseColor: SingleUserColor) -> NSColor
+    static func nsColor(for baseColor: BaseColor) -> NSColor
 #endif
 }
 

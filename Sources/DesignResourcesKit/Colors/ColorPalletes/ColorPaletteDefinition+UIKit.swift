@@ -28,6 +28,10 @@ extension ColorPaletteDefinition {
     static func uiColor(for singleUseColor: SingleUseColor) -> UIColor {
         dynamicColor(for: singleUseColor).uiColor
     }
+
+    static func uiColor(for baseColor: BaseColor) -> UIColor {
+        UIColor(color(for: baseColor))
+    }
 }
 
 #endif
