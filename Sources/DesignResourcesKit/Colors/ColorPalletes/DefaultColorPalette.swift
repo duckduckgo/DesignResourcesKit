@@ -130,7 +130,7 @@ public struct DefaultColorPalette: ColorPaletteDefinition {
         }
     }
 
-    static func dynamicColor(for singleUseColor: SingleUserColor) -> DynamicColor {
+    static func dynamicColor(for singleUseColor: SingleUseColor) -> DynamicColor {
         switch singleUseColor {
         case .controlWidgetBackground:
             return DynamicColor(staticColor: .x818387)

@@ -25,7 +25,7 @@ extension ColorPaletteDefinition {
         dynamicColor(for: designSystemColor).uiColor
     }
 
-    static func uiColor(for singleUseColor: SingleUserColor) -> UIColor {
+    static func uiColor(for singleUseColor: SingleUseColor) -> UIColor {
         dynamicColor(for: singleUseColor).uiColor
     }
 }

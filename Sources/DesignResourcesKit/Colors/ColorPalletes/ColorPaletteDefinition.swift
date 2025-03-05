@@ -20,14 +20,14 @@ import SwiftUI
 
 protocol ColorPaletteDefinition {
     static func dynamicColor(for designSystemColor: DesignSystemColor) -> DynamicColor
-    static func dynamicColor(for singleUseColor: SingleUserColor) -> DynamicColor
+    static func dynamicColor(for singleUseColor: SingleUseColor) -> DynamicColor
 
     static func color(for designSystemColor: DesignSystemColor) -> Color
-    static func color(for singleUseColor: SingleUserColor) -> Color
+    static func color(for singleUseColor: SingleUseColor) -> Color
 
 #if canImport(UIKit)
     static func uiColor(for designSystemColor: DesignSystemColor) -> UIColor
-    static func uiColor(for singleUseColor: SingleUserColor) -> UIColor
+    static func uiColor(for singleUseColor: SingleUseColor) -> UIColor
 #endif
 
 #if canImport(AppKit)
@@ -41,7 +41,7 @@ extension ColorPaletteDefinition {
         dynamicColor(for: designSystemColor).color
     }
 
-    static func color(for singleUseColor: SingleUserColor) -> Color {
+    static func color(for singleUseColor: SingleUseColor) -> Color {
         dynamicColor(for: singleUseColor).color
     }
 }
