@@ -1,8 +1,68 @@
 //
-//  File.swift
-//  DesignResourcesKit
+//  SemanticColor.swift
 //
-//  Created by Mariusz Śpiewak on 05/03/2025.
+//  Copyright © 2025 DuckDuckGo. All rights reserved.
+//
+//  Licensed under the Apache License, Version 2.0 (the "License");
+//  you may not use this file except in compliance with the License.
+//  You may obtain a copy of the License at
+//
+//  http://www.apache.org/licenses/LICENSE-2.0
+//
+//  Unless required by applicable law or agreed to in writing, software
+//  distributed under the License is distributed on an "AS IS" BASIS,
+//  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+//  See the License for the specific language governing permissions and
+//  limitations under the License.
 //
 
-import Foundation
+public enum DesignSystemColor {
+    case panel
+    case background
+    case backgroundSheets
+    case urlBar
+    case surface
+    case container
+    case textLink
+    case textPrimary
+    case textSecondary
+    case textPlaceholder
+    case textSelectionFill
+    case lines
+    case border
+    case accent
+    case icons
+    case iconsSecondary
+    case alertGreen
+    case alertYellow
+    case backdrop
+    case backgroundBlur
+
+    // Buttons/Primary
+    case buttonsPrimaryDefault
+    case buttonsPrimaryPressed
+    case buttonsPrimaryDisabled
+    case buttonsPrimaryText
+    case buttonsPrimaryTextDisabled
+
+    // Buttons/SecondaryFill
+    case buttonsSecondaryFillDefault
+    case buttonsSecondaryFillPressed
+    case buttonsSecondaryFillDisabled
+    case buttonsSecondaryFillText
+    case buttonsSecondaryFillTextDisabled
+
+    // Buttons/SecondaryWire
+    case buttonsSecondaryWireDefault
+    case buttonsSecondaryWirePressedFill
+    case buttonsSecondaryWireDisabledStroke
+    case buttonsSecondaryWireText
+    case buttonsSecondaryWireTextPressed
+    case buttonsSecondaryWireTextDisabled
+
+    // Buttons/Ghost
+    case buttonsGhostPressedFill
+    case buttonsGhostText
+    case buttonsGhostTextPressed
+    case buttonsGhostTextDisabled
+}
