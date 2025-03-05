@@ -18,7 +18,7 @@
 
 import SwiftUI
 
-public extension Color {
+extension Color {
     // MARK: - Special Colors
     static let organicSpecial = Color(0x1A0DAB)
     static let grape = Color(0x6C00A2)

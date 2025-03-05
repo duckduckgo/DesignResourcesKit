@@ -18,7 +18,7 @@
 
 import SwiftUI
 
-public extension Color {
+extension Color {
     static let purple0 = Color(0xECE6FF)
     static let purple10 = Color(0xC7B9EE)
     static let purple20 = Color(0xA591DC)

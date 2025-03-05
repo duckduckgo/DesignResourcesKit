@@ -18,7 +18,7 @@
 
 import SwiftUI
 
-public extension Color {
+extension Color {
     static let gray0 = Color(0xFAFAFA)
     static let gray10 = Color(0xF5F5F5)
     static let gray20 = Color(0xEEEEEE)

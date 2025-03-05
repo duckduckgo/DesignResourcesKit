@@ -18,7 +18,7 @@
 
 import SwiftUI
 
-public extension Color {
+extension Color {
     static let alertGreen = Color(0x21C000)
     static let alertYellow = Color(0xFFD000)
     static let alertRed = Color(0xEE1025)
