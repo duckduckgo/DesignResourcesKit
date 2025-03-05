@@ -38,10 +38,36 @@ public enum DesignSystemColor: String {
     case iconsSecondary
     case alertGreen
     case alertYellow
-    case buttonsSecondaryFillDefault
-    case buttonsSecondaryFillPressed
     case backdrop
     case backgroundBlur
+
+    // Buttons/Primary
+    case buttonsPrimaryDefault
+    case buttonsPrimaryPressed
+    case buttonsPrimaryDisabled
+    case buttonsPrimaryText
+    case buttonsPrimaryTextDisabled
+
+    // Buttons/SecondaryFill
+    case buttonsSecondaryFillDefault
+    case buttonsSecondaryFillPressed
+    case buttonsSecondaryFillDisabled
+    case buttonsSecondaryFillText
+    case buttonsSecondaryFillTextDisabled
+
+    // Buttons/SecondaryWire
+    case buttonsSecondaryWireDefault
+    case buttonsSecondaryWirePressedFill
+    case buttonsSecondaryWireDisabledStroke
+    case buttonsSecondaryWireText
+    case buttonsSecondaryWireTextPressed
+    case buttonsSecondaryWireTextDisabled
+
+    // Buttons/Ghost
+    case buttonsGhostPressedFill
+    case buttonsGhostText
+    case buttonsGhostTextPressed
+    case buttonsGhostTextDisabled
 }
 
 /// When used multiple times, we should propose that these are promoted do design system.

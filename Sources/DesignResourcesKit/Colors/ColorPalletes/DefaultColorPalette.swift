@@ -54,6 +54,27 @@ public struct DefaultColorPalette: ColorPaletteDefinition {
     // Buttons
     private static let buttonsSecondaryFillDefault = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
     private static let buttonsSecondaryFillPressed = DynamicColor(lightColor: .shade(0.18), darkColor: .tint(0.3))
+    private static let buttonsSecondaryFillDisabled = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
+    private static let buttonsSecondaryFillText = DynamicColor(lightColor: .shade(0.84), darkColor: .white)
+    private static let buttonsSecondaryFillTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
+    private static let buttonsPrimaryDefault = DynamicColor(lightColor: .blue50, darkColor: .blue30)
+    private static let buttonsPrimaryPressed = DynamicColor(lightColor: .blue70, darkColor: .blue50)
+    private static let buttonsPrimaryDisabled = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
+    private static let buttonsPrimaryText = DynamicColor(lightColor: .white, darkColor: .shade(0.84))
+    private static let buttonsPrimaryTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
+    private static let buttonsSecondaryWireDefault = DynamicColor(lightColor: .blue50, darkColor: .blue30)
+    private static let buttonsSecondaryWirePressedFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
+    private static let buttonsSecondaryWireDisabledStroke = DynamicColor(lightColor: .shade(0.12), darkColor: .tint(0.24))
+    private static let buttonsSecondaryWireText = DynamicColor(lightColor: .blue50, darkColor: .blue30)
+    private static let buttonsSecondaryWireTextPressed = DynamicColor(lightColor: .blue70, darkColor: .blue20)
+    private static let buttonsSecondaryWireTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
+    private static let buttonsGhostPressedFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
+    private static let buttonsGhostText = DynamicColor(lightColor: .blue50, darkColor: .blue30)
+    private static let buttonsGhostTextPressed = DynamicColor(lightColor: .blue70, darkColor: .blue20)
+    private static let buttonsGhostTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
 
     static func dynamicColor(for designSystemColor: DesignSystemColor) -> DynamicColor {
         switch designSystemColor {
@@ -63,8 +84,6 @@ public struct DefaultColorPalette: ColorPaletteDefinition {
         case .alertYellow: return alertYellow
         case .background: return background
         case .backgroundSheets: return backgroundSheets
-        case .buttonsSecondaryFillDefault: return buttonsSecondaryFillDefault
-        case .buttonsSecondaryFillPressed: return buttonsSecondaryFillPressed
         case .container: return container
         case .icons: return icons
         case .iconsSecondary: return iconsSecondary
@@ -79,6 +98,35 @@ public struct DefaultColorPalette: ColorPaletteDefinition {
         case .textSelectionFill: return textSelectionFill
         case .backdrop: return backdrop
         case .backgroundBlur: return backgroundBlur
+
+            // Buttons/SecondaryFill
+        case .buttonsSecondaryFillDefault: return buttonsSecondaryFillDefault
+        case .buttonsSecondaryFillPressed: return buttonsSecondaryFillPressed
+        case .buttonsSecondaryFillDisabled: return buttonsSecondaryFillDisabled
+        case .buttonsSecondaryFillText: return buttonsSecondaryFillText
+        case .buttonsSecondaryFillTextDisabled: return buttonsSecondaryFillTextDisabled
+
+            // Buttons/Primary
+        case .buttonsPrimaryDefault: return buttonsPrimaryDefault
+        case .buttonsPrimaryPressed: return buttonsPrimaryPressed
+        case .buttonsPrimaryDisabled: return buttonsPrimaryDisabled
+        case .buttonsPrimaryText: return buttonsPrimaryText
+        case .buttonsPrimaryTextDisabled: return buttonsPrimaryTextDisabled
+
+            // Buttons/SecondaryWire
+        case .buttonsSecondaryWireDefault: return buttonsSecondaryWireDefault
+        case .buttonsSecondaryWirePressedFill: return buttonsSecondaryWirePressedFill
+        case .buttonsSecondaryWireDisabledStroke: return buttonsSecondaryWireDisabledStroke
+        case .buttonsSecondaryWireText: return buttonsSecondaryWireText
+        case .buttonsSecondaryWireTextPressed: return buttonsSecondaryWireTextPressed
+        case .buttonsSecondaryWireTextDisabled: return buttonsSecondaryWireTextDisabled
+
+            // Buttons/Ghost
+        case .buttonsGhostPressedFill: return buttonsGhostPressedFill
+        case .buttonsGhostText: return buttonsGhostText
+        case .buttonsGhostTextPressed: return buttonsGhostTextPressed
+        case .buttonsGhostTextDisabled: return buttonsGhostTextDisabled
+
         }
     }
 
