@@ -18,7 +18,7 @@
 
 import SwiftUI
 
-extension Color {
+public extension Color {
 
     /// Creates a shade of black color with opacity.
     static func shade(_ percent: Double) -> Color {
