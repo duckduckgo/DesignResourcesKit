@@ -16,65 +16,7 @@
 //  limitations under the License.
 //
 
-import Foundation
 import SwiftUI
-
-public enum DesignSystemColor: String {
-    case panel
-    case background
-    case backgroundSheets
-    case urlBar
-    case surface
-    case container
-    case textLink
-    case textPrimary
-    case textSecondary
-    case textPlaceholder
-    case textSelectionFill
-    case lines
-    case border
-    case accent
-    case icons
-    case iconsSecondary
-    case alertGreen
-    case alertYellow
-    case backdrop
-    case backgroundBlur
-
-    // Buttons/Primary
-    case buttonsPrimaryDefault
-    case buttonsPrimaryPressed
-    case buttonsPrimaryDisabled
-    case buttonsPrimaryText
-    case buttonsPrimaryTextDisabled
-
-    // Buttons/SecondaryFill
-    case buttonsSecondaryFillDefault
-    case buttonsSecondaryFillPressed
-    case buttonsSecondaryFillDisabled
-    case buttonsSecondaryFillText
-    case buttonsSecondaryFillTextDisabled
-
-    // Buttons/SecondaryWire
-    case buttonsSecondaryWireDefault
-    case buttonsSecondaryWirePressedFill
-    case buttonsSecondaryWireDisabledStroke
-    case buttonsSecondaryWireText
-    case buttonsSecondaryWireTextPressed
-    case buttonsSecondaryWireTextDisabled
-
-    // Buttons/Ghost
-    case buttonsGhostPressedFill
-    case buttonsGhostText
-    case buttonsGhostTextPressed
-    case buttonsGhostTextDisabled
-}
-
-/// When used multiple times, we should propose that these are promoted do design system.
-///
-public enum SingleUserColor: String {
-    case controlWidgetBackground
-}
 
 #if canImport(UIKit)
 
@@ -83,8 +25,12 @@ public extension Color {
         self = palette.paletteDefinition.color(for: designSystemColor)
     }
 
-    init(singleUseColor: SingleUserColor, palette: ColorPalette = DesignSystemPalette.current) {
+    init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
         self = palette.paletteDefinition.color(for: singleUseColor)
+    }
+
+    init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
+        self = palette.paletteDefinition.color(for: baseColor)
     }
 }
 
@@ -93,8 +39,12 @@ public extension UIColor {
         self.init(palette.paletteDefinition.color(for: designSystemColor))
     }
 
-    convenience init(singleUseColor: SingleUserColor, palette: ColorPalette = DesignSystemPalette.current) {
+    convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
         self.init(palette.paletteDefinition.color(for: singleUseColor))
+    }
+
+    convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
+        self.init(palette.paletteDefinition.color(for: baseColor))
     }
 }
 
@@ -107,8 +57,12 @@ public extension Color {
         self = palette.paletteDefinition.color(for: designSystemColor)
     }
 
-    init(singleUseColor: SingleUserColor, palette: ColorPalette = DesignSystemPalette.current) {
+    init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
         self = palette.paletteDefinition.color(for: singleUseColor)
+    }
+
+    init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
+        self = palette.paletteDefinition.color(for: baseColor)
     }
 }
 
@@ -117,8 +71,12 @@ public extension NSColor {
         self.init(palette.paletteDefinition.color(for: designSystemColor))
     }
 
-    convenience init(singleUseColor: SingleUserColor, palette: ColorPalette = DesignSystemPalette.current) {
+    convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
         self.init(palette.paletteDefinition.color(for: singleUseColor))
+    }
+
+    convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
+        self.init(palette.paletteDefinition.color(for: baseColor))
     }
 }
 #endif
