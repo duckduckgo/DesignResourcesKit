@@ -44,24 +44,4 @@ extension ColorPaletteDefinition {
     static func color(for singleUseColor: SingleUserColor) -> Color {
         dynamicColor(for: singleUseColor).color
     }
-
-#if canImport(UIKit)
-    static func uiColor(for designSystemColor: DesignSystemColor) -> UIColor {
-        dynamicColor(for: designSystemColor).uiColor
-    }
-
-    static func uiColor(for singleUseColor: SingleUserColor) -> UIColor {
-        dynamicColor(for: singleUseColor).uiColor
-    }
-#endif
-
-#if canImport(AppKit)
-    static func nsColor(for designSystemColor: DesignSystemColor) -> NSColor {
-        dynamicColor(for: designSystemColor).nsColor
-    }
-
-    static func nsColor(for singleUseColor: SingleUserColor) -> NSColor {
-        dynamicColor(for: singleUseColor).nsColor
-    }
-#endif
 }
