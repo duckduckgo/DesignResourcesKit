@@ -150,6 +150,8 @@ struct DefaultColorPalette: ColorPaletteDefinition {
             return DynamicColor(staticColor: .x818387)
         case .newTabPageItemAccessoryAddBackground:
             return DynamicColor(lightColor: surface.lightColor, darkColor: .gray85)
+        case .unifiedFeedbackFieldBackground:
+            return DynamicColor(lightColor: surface.lightColor, darkColor: .x1C1C1E)
         }
     }
 }

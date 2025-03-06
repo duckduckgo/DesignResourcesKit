@@ -37,4 +37,7 @@ extension Color {
 
     // Control widget background
     static let x818387 = Color(0x818387)
+
+    // UnifiedFeedback fields background
+    static let x1C1C1E = Color(0x1C1C1E)
 }

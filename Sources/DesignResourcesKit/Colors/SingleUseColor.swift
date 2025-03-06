@@ -21,4 +21,6 @@
 public enum SingleUseColor {
     case controlWidgetBackground
     case newTabPageItemAccessoryAddBackground
+
+    case unifiedFeedbackFieldBackground
 }
