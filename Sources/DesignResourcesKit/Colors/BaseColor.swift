@@ -16,7 +16,6 @@
 //  limitations under the License.
 //
 
-
 /// Base colors for use when there's no semantic color required.
 ///
 /// - Important: These colors are returned through a palette definition and can vary between platforms and themes.
@@ -69,4 +68,28 @@ public enum BaseColor {
     case purple80
     case purple90
     case purple100
+
+    case yellow0
+    case yellow10
+    case yellow20
+    case yellow30
+    case yellow40
+    case yellow50
+    case yellow60
+    case yellow70
+    case yellow80
+    case yellow90
+    case yellow100
+
+    case green0
+    case green10
+    case green20
+    case green30
+    case green40
+    case green50
+    case green60
+    case green70
+    case green80
+    case green90
+    case green100
 }
