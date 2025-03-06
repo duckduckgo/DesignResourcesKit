@@ -77,6 +77,12 @@ struct DefaultColorPalette: ColorPaletteDefinition {
     private static let buttonsGhostTextPressed = DynamicColor(lightColor: .blue70, darkColor: .blue20)
     private static let buttonsGhostTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
 
+    private static let buttonsBlack = DynamicColor(lightColor: .black, darkColor: .white)
+    private static let buttonsWhite = DynamicColor(lightColor: .white, darkColor: .black)
+
+    private static let iPadTabs = DynamicColor(lightColor: .gray20, darkColor: .black)
+    private static let variousOutline = DynamicColor(lightColor: .shade(0.24), darkColor: .tint(0.24))
+
     static func dynamicColor(for designSystemColor: DesignSystemColor) -> DynamicColor {
         switch designSystemColor {
         case .urlBar: return urlBar
@@ -128,7 +134,13 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .buttonsGhostTextPressed: return buttonsGhostTextPressed
         case .buttonsGhostTextDisabled: return buttonsGhostTextDisabled
 
+            // Buttons/Color
+        case .buttonsBlack: return buttonsBlack
+        case .buttonsWhite: return buttonsWhite
 
+            // Various
+        case .variousIPadTabs: return iPadTabs
+        case .variousOutline: return variousOutline
         }
     }
 
