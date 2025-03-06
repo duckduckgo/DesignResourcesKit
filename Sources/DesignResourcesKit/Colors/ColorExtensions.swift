@@ -22,11 +22,11 @@ import SwiftUI
 
 public extension Color {
     init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self = palette.paletteDefinition.color(for: designSystemColor)
+        self = palette.paletteDefinition.dynamicColor(for: designSystemColor).color
     }
 
     init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self = palette.paletteDefinition.color(for: singleUseColor)
+        self = palette.paletteDefinition.dynamicColor(for: singleUseColor).color
     }
 
     init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
@@ -36,11 +36,11 @@ public extension Color {
 
 public extension UIColor {
     convenience init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.color(for: designSystemColor))
+        self.init(palette.paletteDefinition.dynamicColor(for: designSystemColor).color)
     }
 
     convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.color(for: singleUseColor))
+        self.init(palette.paletteDefinition.dynamicColor(for: singleUseColor).color)
     }
 
     convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
@@ -54,11 +54,11 @@ public extension UIColor {
 
 public extension Color {
     init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self = palette.paletteDefinition.color(for: designSystemColor)
+        self = palette.paletteDefinition.dynamicColor(for: designSystemColor).color
     }
 
     init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self = palette.paletteDefinition.color(for: singleUseColor)
+        self = palette.paletteDefinition.dynamicColor(for: singleUseColor).color
     }
 
     init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
@@ -68,11 +68,11 @@ public extension Color {
 
 public extension NSColor {
     convenience init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.color(for: designSystemColor))
+        self.init(palette.paletteDefinition.dynamicColor(for: designSystemColor).color)
     }
 
     convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.color(for: singleUseColor))
+        self.init(palette.paletteDefinition.dynamicColor(for: singleUseColor).color)
     }
 
     convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {

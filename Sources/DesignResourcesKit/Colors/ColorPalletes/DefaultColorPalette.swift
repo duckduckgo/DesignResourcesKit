@@ -18,7 +18,8 @@
 
 import SwiftUI
 
-public struct DefaultColorPalette: ColorPaletteDefinition {
+struct DefaultColorPalette: ColorPaletteDefinition {
+
     // Brand
     private static let accent = DynamicColor(lightColor: .blue50, darkColor: .blue30)
 
