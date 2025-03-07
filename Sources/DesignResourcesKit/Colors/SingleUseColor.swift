@@ -23,4 +23,6 @@ public enum SingleUseColor {
     case newTabPageItemAccessoryAddBackground
 
     case unifiedFeedbackFieldBackground
+    case downloadProgressBarBackground
+
 }

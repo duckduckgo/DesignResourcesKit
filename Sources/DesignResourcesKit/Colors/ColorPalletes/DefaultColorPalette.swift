@@ -163,6 +163,7 @@ struct DefaultColorPalette: ColorPaletteDefinition {
             return DynamicColor(lightColor: surface.lightColor, darkColor: .gray85)
         case .unifiedFeedbackFieldBackground:
             return DynamicColor(lightColor: surface.lightColor, darkColor: .x1C1C1E)
+        case .downloadProgressBarBackground: return DynamicColor(lightColor: .gray85, darkColor: .gray70)
         }
     }
 }
