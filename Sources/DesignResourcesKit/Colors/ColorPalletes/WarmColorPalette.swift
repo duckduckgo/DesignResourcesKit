@@ -19,39 +19,54 @@
 import SwiftUI
 
 struct WarmColorPalette: ColorPaletteDefinition {
-    
-    private static let inheritedPalette = DefaultColorPalette.self
 
-    private static let urlBar = DynamicColor(lightColor: .tint(0.86), darkColor: .warmGray85)
-    private static let container = DynamicColor(lightColor: .warmGray85.opacity(0.06), darkColor: .white)
-    private static let panel = DynamicColor(lightColor: .warmGray15, darkColor: .warmGray85)
-    private static let surface = DynamicColor(lightColor: .tint(1.0), darkColor: .x3A4047)
-    private static let background = DynamicColor(lightColor: .warmGray10, darkColor: .warmGray90)
-    private static let backgroundSheets = DynamicColor(lightColor: .tint(1.0), darkColor: .warmGray90)
-    private static let backdrop = DynamicColor(staticColor: .x1D2229.opacity(0.75))
+    private static let gray0 = Color(0xFAFAF8)
+    private static let gray5 = Color(0xF7F7F5)
+    private static let gray10 = Color(0xF5F5F3)
+    private static let gray15 = Color(0xF2F1EE)
+    private static let gray20 = Color(0xEEEDEA)
+    private static let gray25 = Color(0xE5E4E2)
+    private static let gray30 = Color(0xDDDDDA)
+    private static let gray35 = Color(0xD3D4D2)
+    private static let gray40 = Color(0xCACBCB)
+    private static let gray45 = Color(0xB6B9BC)
+    private static let gray50 = Color(0xA3A8AD)
+    private static let gray55 = Color(0x93979D)
+    private static let gray60 = Color(0x83878D)
+    private static let gray65 = Color(0x72777E)
+    private static let gray70 = Color(0x61666E)
+    private static let gray75 = Color(0x51565E)
+    private static let gray80 = Color(0x41464D)
+    private static let gray85 = Color(0x30363D)
+    private static let gray90 = Color(0x20262D)
+    private static let gray95 = Color(0x191E25)
+    private static let gray100 = Color(0x10161D)
+
+    private static let urlBar = DynamicColor(lightColor: .tint(0.86), darkColor: gray80)
+    private static let container = DynamicColor(lightColor: .gray40.opacity(0.4), darkColor: .tint(0.12))
+    private static let panel = DynamicColor(lightColor: gray15, darkColor: gray85)
+    private static let surface = DynamicColor(lightColor: .tint(1.0), darkColor: gray85)
+    private static let background = DynamicColor(lightColor: gray10, darkColor: gray90)
+    private static let backgroundSheets = DynamicColor(lightColor: .tint(1.0), darkColor: gray90)
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
-    private static let border = DynamicColor(lightColor: .warmGray30, darkColor: .warmGray40)
+    private static let border = DynamicColor(lightColor: gray30, darkColor: gray40)
 
     // Icons
-    private static let icons = DynamicColor(lightColor: .warmGray80, darkColor: .warmGray20)
-    private static let iconsSecondary = DynamicColor(lightColor: .warmGray55, darkColor: .warmGray40)
+    private static let icons = DynamicColor(lightColor: gray80, darkColor: gray20)
+    private static let iconsSecondary = DynamicColor(lightColor: gray55, darkColor: gray40)
 
     // Text
-    private static let textPrimary = DynamicColor(lightColor: .shade(0.84), darkColor: .tint(0.90))
-    private static let textSecondary = DynamicColor(lightColor: .shade(0.6), darkColor: .tint(0.66))
+    private static let textPrimary = DynamicColor(lightColor: gray85, darkColor: .tint(0.84))
 
-    // UI components
-    private static let buttonsSecondaryFillDefault = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
-    private static let buttonsSecondaryFillPressed = DynamicColor(lightColor: .shade(0.18), darkColor: .tint(0.3))
+    // Various
+    private static let variousIPadTabs = DynamicColor(lightColor: gray20, darkColor: .black)
 
     static func dynamicColor(for color: DesignSystemColor) -> DynamicColor {
         switch color {
         case .urlBar: return urlBar
         case .background: return background
         case .backgroundSheets: return backgroundSheets
-        case .buttonsSecondaryFillDefault: return buttonsSecondaryFillDefault
-        case .buttonsSecondaryFillPressed: return buttonsSecondaryFillPressed
         case .panel: return panel
         case .surface: return surface
         case .container: return container
@@ -59,16 +74,32 @@ struct WarmColorPalette: ColorPaletteDefinition {
         case .iconsSecondary: return iconsSecondary
         case .border: return border
         case .textPrimary: return textPrimary
-        case .textSecondary: return textSecondary
-        case .backdrop: return backdrop
         case .backgroundBlur: return backgroundBlur
 
         default:
-            return inheritedPalette.dynamicColor(for: color)
+            return DefaultColorPalette.dynamicColor(for: color)
         }
     }
 
-    static func dynamicColor(for singleUseColor: SingleUserColor) -> DynamicColor {
-        inheritedPalette.dynamicColor(for: singleUseColor)
+    static func color(for baseColor: BaseColor) -> Color {
+        switch baseColor {
+        case .gray0: gray0
+        case .gray10: gray10
+        case .gray20: gray20
+        case .gray30: gray30
+        case .gray40: gray40
+        case .gray50: gray50
+        case .gray60: gray60
+        case .gray70: gray70
+        case .gray80: gray80
+        case .gray85: gray85
+        case .gray90: gray90
+        case .gray100: gray100
+        default: DefaultColorPalette.color(for: baseColor)
+        }
+    }
+
+    static func dynamicColor(for singleUseColor: SingleUseColor) -> DynamicColor {
+        DefaultColorPalette.dynamicColor(for: singleUseColor)
     }
 }
