@@ -80,6 +80,11 @@ struct DefaultColorPalette: ColorPaletteDefinition {
     private static let buttonsBlack = DynamicColor(lightColor: .black, darkColor: .white)
     private static let buttonsWhite = DynamicColor(lightColor: .white, darkColor: .black)
 
+    private static let buttonsDeleteGhostPressedFill = DynamicColor(lightColor: .alertRed50.opacity(0.12), darkColor: .alertRed20.opacity(0.18))
+    private static let buttonsDeleteGhostTextPressed = DynamicColor(lightColor: .alertRed70, darkColor: .alertRed10)
+    private static let buttonsDeleteGhostText = DynamicColor(lightColor: .alertRedOnLight, darkColor: .alertRedOnDark)
+    private static let buttonsDeleteGhostTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
     private static let iPadTabs = DynamicColor(lightColor: .gray20, darkColor: .black)
     private static let variousOutline = DynamicColor(lightColor: .shade(0.24), darkColor: .tint(0.24))
 
@@ -141,6 +146,12 @@ struct DefaultColorPalette: ColorPaletteDefinition {
             // Various
         case .variousIPadTabs: return iPadTabs
         case .variousOutline: return variousOutline
+
+            // Buttons/DeleteGhost
+        case .buttonsDeleteGhostPressedFill: return buttonsDeleteGhostPressedFill
+        case .buttonsDeleteGhostText: return buttonsDeleteGhostText
+        case .buttonsDeleteGhostTextPressed: return buttonsDeleteGhostTextPressed
+        case .buttonsDeleteGhostTextDisabled: return buttonsDeleteGhostTextDisabled
         }
     }
 

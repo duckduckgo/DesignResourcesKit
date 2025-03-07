@@ -24,6 +24,7 @@ extension Color {
     static let alertRed = Color(0xEE1025)
 
     // MARK: - Alert Reds
+    static let alertRed10 = Color(0xFF7378)
     static let alertRed20 = Color(0xFF545A)
     static let alertRed30 = Color(0xE04A4F)
     static let alertRed40 = Color(0xD1454A)
@@ -36,6 +37,6 @@ extension Color {
     static let alertYellowBackgroundDark = Color(0x4A3C1C)
 
     // MARK: - Alert Red OnLight & OnDark
-    static let alertRedOnLight = Color(0xEB102D)
-    static let alertRedOnDark = Color(0xFF545A)
+    static let alertRedOnLight = alertRed50
+    static let alertRedOnDark = alertRed20
 }

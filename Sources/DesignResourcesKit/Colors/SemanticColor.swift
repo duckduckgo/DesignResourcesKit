@@ -70,6 +70,12 @@ public enum DesignSystemColor {
     case buttonsBlack
     case buttonsWhite
 
+    // Buttons/DeleteGhost
+    case buttonsDeleteGhostPressedFill
+    case buttonsDeleteGhostText
+    case buttonsDeleteGhostTextPressed
+    case buttonsDeleteGhostTextDisabled
+
     // Various
     case variousIPadTabs
     case variousOutline
