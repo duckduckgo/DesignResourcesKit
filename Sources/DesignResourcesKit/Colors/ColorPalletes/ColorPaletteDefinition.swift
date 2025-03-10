@@ -27,6 +27,6 @@ protocol ColorPaletteDefinition {
     /// Gets dynamic color proxy for a single use semantic color.
     static func dynamicColor(for singleUseColor: SingleUseColor) -> DynamicColor
 
-    /// Gets dynamic color proxy for a base color.
+    /// Returns a base color.
     static func color(for baseColor: BaseColor) -> Color
 }

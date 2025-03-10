@@ -21,7 +21,11 @@ import SwiftUI
 #if canImport(AppKit)
 extension DynamicColor {
     var nsColor: NSColor {
-        NSColor(name: nil) { appearance in
+        NSColor(name: nil, dynamicProvider: dynamicProvider)
+    }
+
+    var dynamicProvider: (NSAppearance) -> NSColor {
+        { appearance in
             switch appearance.bestMatch(from: [.aqua, .darkAqua]) {
             case .aqua: return NSColor(lightColor)
             case .darkAqua: return NSColor(darkColor)

@@ -36,11 +36,11 @@ public extension Color {
 
 public extension UIColor {
     convenience init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.dynamicColor(for: designSystemColor).color)
+        self.init(dynamicProvider: palette.paletteDefinition.dynamicColor(for: designSystemColor).dynamicProvider)
     }
 
     convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.dynamicColor(for: singleUseColor).color)
+        self.init(dynamicProvider: palette.paletteDefinition.dynamicColor(for: singleUseColor).dynamicProvider)
     }
 
     convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {
@@ -68,11 +68,11 @@ public extension Color {
 
 public extension NSColor {
     convenience init(designSystemColor: DesignSystemColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.dynamicColor(for: designSystemColor).color)
+        self.init(name: nil, dynamicProvider: palette.paletteDefinition.dynamicColor(for: designSystemColor).dynamicProvider)
     }
 
     convenience init(singleUseColor: SingleUseColor, palette: ColorPalette = DesignSystemPalette.current) {
-        self.init(palette.paletteDefinition.dynamicColor(for: singleUseColor).color)
+        self.init(name: nil, dynamicProvider: palette.paletteDefinition.dynamicColor(for: singleUseColor).dynamicProvider)
     }
 
     convenience init(baseColor: BaseColor, palette: ColorPalette = DesignSystemPalette.current) {

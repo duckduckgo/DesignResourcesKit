@@ -21,7 +21,11 @@ import SwiftUI
 #if canImport(UIKit)
 extension DynamicColor {
     var uiColor: UIColor {
-        UIColor { traitCollection in
+        UIColor(dynamicProvider: dynamicProvider)
+    }
+
+    var dynamicProvider: (UITraitCollection) -> UIColor {
+        { traitCollection in
             switch traitCollection.userInterfaceStyle {
             case .light: return UIColor(lightColor)
             case .dark: return UIColor(darkColor)
