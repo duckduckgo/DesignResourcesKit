@@ -20,51 +20,57 @@ import SwiftUI
 
 struct DefaultColorPalette: ColorPaletteDefinition {
 
-    // Brand
-    private static let accent = DynamicColor(lightColor: .blue50, darkColor: .blue30)
-
     // Backgrounds
-    private static let urlBar = DynamicColor(lightColor: .xEAEAEA, darkColor: .gray80)
-    private static let container = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.12))
-    private static let panel = DynamicColor(lightColor: .gray0, darkColor: .gray85)
-    private static let surface = DynamicColor(lightColor: .white, darkColor: .x2F2F2F)
     private static let background = DynamicColor(lightColor: .gray10, darkColor: .gray90)
+    private static let surface = DynamicColor(lightColor: .white, darkColor: .x2F2F2F)
     private static let backgroundSheets = DynamicColor(lightColor: .white, darkColor: .gray90)
+    private static let panel = DynamicColor(lightColor: .gray0, darkColor: .gray85)
+    private static let container = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.12))
+    private static let urlBar = DynamicColor(lightColor: .xEAEAEA, darkColor: .gray80)
+
+    // Various
+    private static let variousIPadTabs = DynamicColor(lightColor: .gray20, darkColor: .black)
+    private static let variousOutline = DynamicColor(lightColor: .shade(0.24), darkColor: .tint(0.24))
     private static let backdrop = DynamicColor(lightColor: .x1E1E1E.opacity(0.75), darkColor: .gray15.opacity(0.8))
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
+
+    // Text
+    private static let textPrimary = DynamicColor(lightColor: .shade(0.84), darkColor: .tint(0.84))
+    private static let textSecondary = DynamicColor(lightColor: .shade(0.6), darkColor: .tint(0.6))
+    private static let textLink = DynamicColor(lightColor: .blue50, darkColor: .blue30)
+    private static let textSelectionFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
+    private static let textPlaceholder = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
+    // Brand
+    private static let accent = DynamicColor(lightColor: .blue50, darkColor: .blue30)
 
     // System
     private static let lines = DynamicColor(lightColor: .shade(0.09), darkColor: .tint(0.09))
     private static let border = DynamicColor(lightColor: .gray30, darkColor: .gray40)
 
-    // Icons
-    private static let icons = DynamicColor(lightColor: .shade(0.84), darkColor: .tint(0.84))
-    private static let iconsSecondary = DynamicColor(lightColor: .shade(0.6), darkColor: .tint(0.6))
-
-    // Text
-    private static let textLink = DynamicColor(lightColor: .blue50, darkColor: .blue30)
-    private static let textPrimary = DynamicColor(lightColor: .shade(0.84), darkColor: .tint(0.84))
-    private static let textSecondary = DynamicColor(lightColor: .shade(0.6), darkColor: .tint(0.6))
-    private static let textPlaceholder = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
-    private static let textSelectionFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
-
     // Alert
     private static let alertGreen = DynamicColor(lightColor: .alertGreen, darkColor: .alertYellow)
     private static let alertYellow = DynamicColor(lightColor: .alertYellow, darkColor: .alertYellow)
 
-    // Buttons
-    private static let buttonsSecondaryFillDefault = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
-    private static let buttonsSecondaryFillPressed = DynamicColor(lightColor: .shade(0.18), darkColor: .tint(0.3))
-    private static let buttonsSecondaryFillDisabled = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
-    private static let buttonsSecondaryFillText = DynamicColor(lightColor: .shade(0.84), darkColor: .white)
-    private static let buttonsSecondaryFillTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+    // Icons
+    private static let icons = DynamicColor(lightColor: .shade(0.84), darkColor: .tint(0.84))
+    private static let iconsSecondary = DynamicColor(lightColor: .shade(0.6), darkColor: .tint(0.6))
 
+    // Buttons/Primary
     private static let buttonsPrimaryDefault = DynamicColor(lightColor: .blue50, darkColor: .blue30)
     private static let buttonsPrimaryPressed = DynamicColor(lightColor: .blue70, darkColor: .blue50)
     private static let buttonsPrimaryDisabled = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
     private static let buttonsPrimaryText = DynamicColor(lightColor: .white, darkColor: .shade(0.84))
     private static let buttonsPrimaryTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
 
+    // Buttons/SecondaryFill
+    private static let buttonsSecondaryFillDefault = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
+    private static let buttonsSecondaryFillPressed = DynamicColor(lightColor: .shade(0.18), darkColor: .tint(0.3))
+    private static let buttonsSecondaryFillDisabled = DynamicColor(lightColor: .shade(0.06), darkColor: .tint(0.18))
+    private static let buttonsSecondaryFillText = DynamicColor(lightColor: .shade(0.84), darkColor: .white)
+    private static let buttonsSecondaryFillTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
+
+    // Buttons/SecondaryWire
     private static let buttonsSecondaryWireDefault = DynamicColor(lightColor: .blue50, darkColor: .blue30)
     private static let buttonsSecondaryWirePressedFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
     private static let buttonsSecondaryWireDisabledStroke = DynamicColor(lightColor: .shade(0.12), darkColor: .tint(0.24))
@@ -72,21 +78,21 @@ struct DefaultColorPalette: ColorPaletteDefinition {
     private static let buttonsSecondaryWireTextPressed = DynamicColor(lightColor: .blue70, darkColor: .blue20)
     private static let buttonsSecondaryWireTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
 
+    // Buttons/Ghost
     private static let buttonsGhostPressedFill = DynamicColor(lightColor: .blue50.opacity(0.2), darkColor: .blue30.opacity(0.2))
     private static let buttonsGhostText = DynamicColor(lightColor: .blue50, darkColor: .blue30)
     private static let buttonsGhostTextPressed = DynamicColor(lightColor: .blue70, darkColor: .blue20)
     private static let buttonsGhostTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
 
+    // Buttons/Color
     private static let buttonsBlack = DynamicColor(lightColor: .black, darkColor: .white)
     private static let buttonsWhite = DynamicColor(lightColor: .white, darkColor: .black)
 
+    // Buttons/DeleteGhost
     private static let buttonsDeleteGhostPressedFill = DynamicColor(lightColor: .alertRed50.opacity(0.12), darkColor: .alertRed20.opacity(0.18))
     private static let buttonsDeleteGhostTextPressed = DynamicColor(lightColor: .alertRed70, darkColor: .alertRed10)
     private static let buttonsDeleteGhostText = DynamicColor(lightColor: .alertRedOnLight, darkColor: .alertRedOnDark)
     private static let buttonsDeleteGhostTextDisabled = DynamicColor(lightColor: .shade(0.36), darkColor: .tint(0.36))
-
-    private static let iPadTabs = DynamicColor(lightColor: .gray20, darkColor: .black)
-    private static let variousOutline = DynamicColor(lightColor: .shade(0.24), darkColor: .tint(0.24))
 
     static func dynamicColor(for designSystemColor: DesignSystemColor) -> DynamicColor {
         switch designSystemColor {
@@ -144,7 +150,7 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .buttonsWhite: return buttonsWhite
 
             // Various
-        case .variousIPadTabs: return iPadTabs
+        case .variousIPadTabs: return variousIPadTabs
         case .variousOutline: return variousOutline
 
             // Buttons/DeleteGhost

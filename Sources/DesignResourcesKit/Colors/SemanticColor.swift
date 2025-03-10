@@ -17,26 +17,42 @@
 //
 
 public enum DesignSystemColor {
-    case panel
+
+    // Backgrounds
     case background
-    case backgroundSheets
-    case urlBar
     case surface
+    case backgroundSheets
+    case panel
     case container
-    case textLink
-    case textPrimary
-    case textSecondary
-    case textPlaceholder
-    case textSelectionFill
-    case lines
-    case border
-    case accent
-    case icons
-    case iconsSecondary
-    case alertGreen
-    case alertYellow
+    case urlBar
+
+    // Various
+    case variousIPadTabs
+    case variousOutline
     case backdrop
     case backgroundBlur
+
+    // Text
+    case textPrimary
+    case textSecondary
+    case textLink
+    case textSelectionFill
+    case textPlaceholder
+
+    // Brand
+    case accent
+
+    // System
+    case lines
+    case border
+
+    // Alert
+    case alertGreen
+    case alertYellow
+
+    // Icons
+    case icons
+    case iconsSecondary
 
     // Buttons/Primary
     case buttonsPrimaryDefault
@@ -75,8 +91,4 @@ public enum DesignSystemColor {
     case buttonsDeleteGhostText
     case buttonsDeleteGhostTextPressed
     case buttonsDeleteGhostTextDisabled
-
-    // Various
-    case variousIPadTabs
-    case variousOutline
 }
