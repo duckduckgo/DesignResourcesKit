@@ -17,6 +17,9 @@
 //
 
 public struct DesignSystemPalette {
+    /// The current color palette set globally.
+    ///
+    /// Used as a default parameter value when creating colors via public color extensions.
     public static var current: ColorPalette = .default
 }
 

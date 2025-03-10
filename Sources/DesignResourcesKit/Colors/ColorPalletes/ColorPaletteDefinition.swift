@@ -18,8 +18,15 @@
 
 import SwiftUI
 
+/// Color palette definition that logically collects all colors that work properly with each other.
 protocol ColorPaletteDefinition {
+    
+    /// Gets dynamic color proxy for a specific semantic color.
     static func dynamicColor(for designSystemColor: DesignSystemColor) -> DynamicColor
+
+    /// Gets dynamic color proxy for a single use semantic color.
     static func dynamicColor(for singleUseColor: SingleUseColor) -> DynamicColor
+
+    /// Gets dynamic color proxy for a base color.
     static func color(for baseColor: BaseColor) -> Color
 }

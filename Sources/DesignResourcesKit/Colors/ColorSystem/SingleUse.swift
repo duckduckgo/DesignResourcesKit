@@ -19,7 +19,10 @@
 import Foundation
 import SwiftUI
 
+// Only add colors here which are NOT in the standard Color System.
+// Keep `xHEXVAL` naming convention for custom colors to distinguish them from the Color System. Add comment with usage place(s).
 extension Color {
+
     // Used in URL bar background light mode
     static let xEAEAEA = Color(0xEAEAEA)
 

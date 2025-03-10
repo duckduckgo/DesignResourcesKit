@@ -19,6 +19,11 @@
 import SwiftUI
 
 extension ColorPaletteDefinition {
+
+    /// Proxy for retrieving base colors.
+    ///
+    /// It is necessary to create base colors via color palette definition,
+    /// otherwise static usage in client code will end up immune to global palette changes.
     static func color(for baseColor: BaseColor) -> Color {
         switch baseColor {
         case .gray0: return Color.gray0
