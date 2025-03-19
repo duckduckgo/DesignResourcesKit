@@ -49,7 +49,7 @@ struct DefaultColorPalette: ColorPaletteDefinition {
     private static let border = DynamicColor(lightColor: .gray30, darkColor: .gray40)
 
     // Alert
-    private static let alertGreen = DynamicColor(lightColor: .alertGreen, darkColor: .alertYellow)
+    private static let alertGreen = DynamicColor(lightColor: .alertGreen, darkColor: .alertGreen)
     private static let alertYellow = DynamicColor(lightColor: .alertYellow, darkColor: .alertYellow)
 
     // Icons
