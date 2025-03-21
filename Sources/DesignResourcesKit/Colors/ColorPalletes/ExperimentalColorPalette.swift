@@ -1,5 +1,5 @@
 //
-//  WarmColorPalette.swift
+//  ExperimentalColorPalette.swift
 //
 //  Copyright © 2025 DuckDuckGo. All rights reserved.
 //
@@ -18,7 +18,16 @@
 
 import SwiftUI
 
-struct WarmColorPalette: ColorPaletteDefinition {
+struct ExperimentalColorPalette: ColorPaletteDefinition {
+
+    private static let xE9EBEC = Color(0xE9EBEC)
+    private static let x27282A = Color(0x27282A)
+    private static let xF4F5F6 = Color(0xF4F5F6)
+    private static let x333538 = Color(0x333538)
+    private static let xF9FAFA = Color(0xF9FAFA)
+    private static let x404145 = Color(0x404145)
+    private static let x1C1F21 = Color(0x1C1F21)
+    private static let xF9F9F9 = Color(0xF9F9F9)
 
     private static let gray0 = Color(0xFAFAF8)
     private static let gray5 = Color(0xF7F7F5)
@@ -44,20 +53,25 @@ struct WarmColorPalette: ColorPaletteDefinition {
 
     private static let urlBar = DynamicColor(lightColor: .tint(0.86), darkColor: gray80)
     private static let container = DynamicColor(lightColor: .gray40.opacity(0.4), darkColor: .tint(0.12))
-    private static let panel = DynamicColor(lightColor: gray15, darkColor: gray85)
-    private static let surface = DynamicColor(lightColor: .tint(1.0), darkColor: gray85)
-    private static let background = DynamicColor(lightColor: gray10, darkColor: gray90)
-    private static let backgroundSheets = DynamicColor(lightColor: .tint(1.0), darkColor: gray90)
+
+    private static let surface = DynamicColor(lightColor: xF4F5F6, darkColor: x333538)
+    private static let background = DynamicColor(lightColor: xE9EBEC, darkColor: x27282A)
+    private static let backgroundSheets = DynamicColor(lightColor: xF4F5F6, darkColor: x333538)
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
     private static let border = DynamicColor(lightColor: gray30, darkColor: gray40)
 
     // Icons
-    private static let icons = DynamicColor(lightColor: gray80, darkColor: gray20)
-    private static let iconsSecondary = DynamicColor(lightColor: gray55, darkColor: gray40)
+    private static let icons = DynamicColor(lightColor: x1C1F21.opacity(0.84), darkColor: .tint(0.84))
+    private static let iconsSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.6), darkColor: .tint(0.6))
 
     // Text
-    private static let textPrimary = DynamicColor(lightColor: gray85, darkColor: .tint(0.84))
+    private static let textPrimary = DynamicColor(lightColor: x1C1F21, darkColor: .tint(0.9))
+    private static let textSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.72), darkColor: .tint(0.6))
+    private static let textPlaceholder = DynamicColor(lightColor: x1C1F21.opacity(0.4), darkColor: .tint(0.4))
+
+    // System
+    private static let lines = DynamicColor(lightColor: x1C1F21.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
 
     // Various
     private static let variousIPadTabs = DynamicColor(lightColor: gray20, darkColor: .black)
@@ -67,7 +81,7 @@ struct WarmColorPalette: ColorPaletteDefinition {
         case .urlBar: return urlBar
         case .background: return background
         case .backgroundSheets: return backgroundSheets
-        case .panel: return panel
+        case .panel: return background
         case .surface: return surface
         case .container: return container
         case .icons: return icons
@@ -75,6 +89,7 @@ struct WarmColorPalette: ColorPaletteDefinition {
         case .border: return border
         case .textPrimary: return textPrimary
         case .backgroundBlur: return backgroundBlur
+        case .lines: return lines
 
         default:
             return DefaultColorPalette.dynamicColor(for: color)
