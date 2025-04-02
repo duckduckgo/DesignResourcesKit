@@ -101,6 +101,9 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .alertGreen: return alertGreen
         case .alertYellow: return alertYellow
         case .background: return background
+        case .backgroundTertiary:
+            assertionFailure("This color should be used in experimental palette only.")
+            return background
         case .backgroundSheets: return backgroundSheets
         case .container: return container
         case .icons: return icons
@@ -116,6 +119,19 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .textSelectionFill: return textSelectionFill
         case .backdrop: return backdrop
         case .backgroundBlur: return backgroundBlur
+
+        case .shadowPrimary:
+            assertionFailure("This color should be used in experimental palette only.")
+            return border
+        case .controlsFillPrimary:
+            assertionFailure("This color should be used in experimental palette only.")
+            return surface
+        case .controlsFillSecondary:
+            assertionFailure("This color should be used in experimental palette only.")
+            return surface
+        case .controlsFillTertiary:
+            assertionFailure("This color should be used in experimental palette only.")
+            return surface
 
             // Buttons/SecondaryFill
         case .buttonsSecondaryFillDefault: return buttonsSecondaryFillDefault
