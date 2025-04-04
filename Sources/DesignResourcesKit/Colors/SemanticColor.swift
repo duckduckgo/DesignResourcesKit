@@ -20,6 +20,10 @@ public enum DesignSystemColor {
 
     // Backgrounds
     case background
+
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
+    case backgroundTertiary
     case surface
     case backgroundSheets
     case panel
@@ -32,12 +36,28 @@ public enum DesignSystemColor {
     case backdrop
     case backgroundBlur
 
+    // Shadows
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
+    case shadowPrimary
+
     // Text
     case textPrimary
     case textSecondary
     case textLink
     case textSelectionFill
     case textPlaceholder
+
+    // Controls
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
+    case controlsFillPrimary
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
+    case controlsFillSecondary
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
+    case controlsFillTertiary
 
     // Brand
     case accent
