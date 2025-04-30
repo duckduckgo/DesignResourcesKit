@@ -42,7 +42,9 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
     // Shadow
-    private static let shadowPrimary = DynamicColor(lightColor: x1C1F21.opacity(0.09), darkColor: x181818.opacity(0.16))
+    private static let shadowPrimary = DynamicColor(lightColor: x1C1F21.opacity(0.04), darkColor: x181818.opacity(0.16))
+    private static let shadowSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.08), darkColor: x181818.opacity(0.24))
+    private static let shadowTertiary = DynamicColor(lightColor: x1C1F21.opacity(0.24), darkColor: x181818.opacity(0.48))
 
     // Controls
     private static let controlsFillPrimary = DynamicColor(lightColor: x1C1F21.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
@@ -80,6 +82,8 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
         case .lines: return lines
         case .variousIPadTabs: return variousIPadTabs
         case .shadowPrimary: return shadowPrimary
+        case .shadowSecondary: return shadowSecondary
+        case .shadowTertiary: return shadowTertiary
         case .controlsFillPrimary: return controlsFillPrimary
         case .controlsFillSecondary: return controlsFillSecondary
         case .controlsFillTertiary: return controlsFillTertiary

@@ -40,6 +40,8 @@ public enum DesignSystemColor {
     /// - warning: This color should be used in experimental palette only until it's fully adopted.
     /// Using it with default palette fires assertion.
     case shadowPrimary
+    case shadowSecondary
+    case shadowTertiary
 
     // Text
     case textPrimary

@@ -120,16 +120,10 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .backdrop: return backdrop
         case .backgroundBlur: return backgroundBlur
 
-        case .shadowPrimary:
+        case .shadowPrimary, .shadowSecondary, .shadowTertiary:
             assertionFailure("This color should be used in experimental palette only.")
-            return border
-        case .controlsFillPrimary:
-            assertionFailure("This color should be used in experimental palette only.")
-            return surface
-        case .controlsFillSecondary:
-            assertionFailure("This color should be used in experimental palette only.")
-            return surface
-        case .controlsFillTertiary:
+            return lines
+        case .controlsFillPrimary, .controlsFillSecondary, .controlsFillTertiary:
             assertionFailure("This color should be used in experimental palette only.")
             return surface
 
