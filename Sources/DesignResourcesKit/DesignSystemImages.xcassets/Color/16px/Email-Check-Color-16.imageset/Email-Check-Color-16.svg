@@ -1,0 +1,18 @@
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="12" cy="12" r="3.5" fill="#4CBA3C"/>
+  <circle cx="12" cy="12" r="3.5" stroke="url(#Email-Check-Color-16_svg__a)"/>
+  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" d="M10.5 11.875 11.625 13l1.875-1.875"/>
+  <path fill="#F9BE1A" d="M13.238 1.7c1.029 0 1.862.834 1.862 1.863v3.514c-.033-.026-.066.949-.1.923a5 5 0 0 0-7.583 6c.045.102-.907.202-.856.3h-3.8A1.863 1.863 0 0 1 .9 12.437V3.563C.9 2.534 1.733 1.7 2.762 1.7h10.476Z"/>
+  <path fill="#FFE8A3" d="m13.6 1.6 1.65 1.6-3.836 3.834A4.992 4.992 0 0 0 8.158 8.8H6.5L.8 3.2l1.6-1.6h11.2Z"/>
+  <path fill="url(#Email-Check-Color-16_svg__b)" d="M12 1a4 4 0 0 1 4 4v2.581c0 .455-.636.692-1 .419"/>
+  <defs>
+    <linearGradient id="Email-Check-Color-16_svg__a" x1="12" x2="12" y1="8.5" y2="15.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#399F29"/>
+      <stop offset="1" stop-color="#288419"/>
+    </linearGradient>
+    <linearGradient id="Email-Check-Color-16_svg__b" x1="8.001" x2="8.001" y1=".8" y2="15.2" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C18010"/>
+      <stop offset="1" stop-color="#92540C"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Dark-Mode-16.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

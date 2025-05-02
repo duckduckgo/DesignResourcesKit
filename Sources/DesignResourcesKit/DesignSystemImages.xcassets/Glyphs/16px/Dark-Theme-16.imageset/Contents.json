@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "Dark-Theme-16.svg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

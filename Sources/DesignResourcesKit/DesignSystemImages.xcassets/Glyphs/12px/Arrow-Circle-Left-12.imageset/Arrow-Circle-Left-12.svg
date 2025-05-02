@@ -1,0 +1,11 @@
+<svg fill="none" viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+  <g fill="#000" clip-path="url(#Arrow-Circle-Left-12_svg__a)">
+    <path d="M6.323 8.686a.625.625 0 0 0-.012-.884L5.1 6.625h3.274a.625.625 0 1 0 0-1.25H5.229L6.31 4.323a.625.625 0 1 0-.872-.896L3.19 5.614a.625.625 0 0 0 0 .897l2.25 2.187c.248.24.644.235.884-.012Z"/>
+    <path fill-rule="evenodd" d="M6 0a6 6 0 1 0 0 12A6 6 0 0 0 6 0ZM1.25 6a4.75 4.75 0 1 1 9.5 0 4.75 4.75 0 0 1-9.5 0Z" clip-rule="evenodd"/>
+  </g>
+  <defs>
+    <clipPath id="Arrow-Circle-Left-12_svg__a">
+      <path fill="#fff" d="M0 0h12v12H0z"/>
+    </clipPath>
+  </defs>
+</svg>

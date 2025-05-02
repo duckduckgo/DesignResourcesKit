@@ -1,0 +1,13 @@
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#Lock-Color-16_svg__a)">
+    <path fill="#888" fill-rule="evenodd" d="M4 4a4 4 0 1 1 8 0v6.5a4 4 0 0 1-8 0V4Zm4-3a3 3 0 0 0-3 3v6.5a3 3 0 1 0 6 0V4a3 3 0 0 0-3-3Z" clip-rule="evenodd"/>
+    <path fill="#F9BE1A" d="M2 8h12v7H2V8Z"/>
+    <path fill="#FFDE7A" d="M2 8h6v7H2V8Z"/>
+    <path fill="#C18010" fill-rule="evenodd" d="M1 9a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9Zm2-1a1 1 0 0 0-1 1v5a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V9a1 1 0 0 0-1-1H3Z" clip-rule="evenodd"/>
+  </g>
+  <defs>
+    <clipPath id="Lock-Color-16_svg__a">
+      <path fill="#fff" d="M0 0h16v16H0z"/>
+    </clipPath>
+  </defs>
+</svg>

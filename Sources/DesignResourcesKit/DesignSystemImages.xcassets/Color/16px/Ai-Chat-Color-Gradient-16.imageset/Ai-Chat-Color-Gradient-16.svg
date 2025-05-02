@@ -1,0 +1,16 @@
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#Ai-Chat-Color-Gradient-16_svg__a)">
+    <path fill="#fff" fill-rule="evenodd" d="M2.358 12.176c.32.283.38.774.1 1.096l-1.294 1.491c-.441.51-.014 1.284.65 1.17 2.656-.456 7.31-1.338 9.2-2.206C13.94 12.667 16 10.11 16 7.125 16 3.19 12.418 0 8 0S0 3.19 0 7.125c0 1.974.902 3.76 2.358 5.051Z" clip-rule="evenodd"/>
+    <path fill="url(#Ai-Chat-Color-Gradient-16_svg__b)" fill-opacity=".77" fill-rule="evenodd" d="M2.358 12.176c.32.283.38.774.1 1.096l-1.294 1.491c-.441.51-.014 1.284.65 1.17 2.656-.456 7.31-1.338 9.2-2.206C13.94 12.667 16 10.11 16 7.125 16 3.19 12.418 0 8 0S0 3.19 0 7.125c0 1.974.902 3.76 2.358 5.051Z" clip-rule="evenodd"/>
+    <path fill="#fff" d="M7.632 2.787c.096-.383.64-.383.736 0l.438 1.753c.203.815.84 1.45 1.654 1.654l1.753.438c.383.096.383.64 0 .736l-1.753.438c-.815.203-1.45.84-1.654 1.654l-.438 1.753c-.096.383-.64.383-.736 0L7.194 9.46A2.273 2.273 0 0 0 5.54 7.806l-1.753-.438c-.383-.096-.383-.64 0-.736l1.753-.438A2.273 2.273 0 0 0 7.194 4.54l.438-1.753Z"/>
+  </g>
+  <defs>
+    <linearGradient id="Ai-Chat-Color-Gradient-16_svg__b" x1="1.2" x2="8" y1=".8" y2="15.944" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A276FF"/>
+      <stop offset="1" stop-color="#3969EF"/>
+    </linearGradient>
+    <clipPath id="Ai-Chat-Color-Gradient-16_svg__a">
+      <path fill="#fff" d="M0 0h16v16H0z"/>
+    </clipPath>
+  </defs>
+</svg>

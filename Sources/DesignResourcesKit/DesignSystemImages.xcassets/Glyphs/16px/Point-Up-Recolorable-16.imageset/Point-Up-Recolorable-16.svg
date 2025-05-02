@@ -1,0 +1,11 @@
+<svg fill="none" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <g clip-path="url(#Point-Up-Recolorable-16_svg__a)">
+    <path fill="#63C853" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/>
+    <path fill="#fff" d="M7.057 3.049a.625.625 0 0 0-.864 0l-3 2.875a.625.625 0 0 0 .864.902L6 4.965v3.911C6 10.602 7.4 12 9.125 12h3.25a.625.625 0 1 0 0-1.25h-3.25A1.874 1.874 0 0 1 7.25 8.876V4.965l1.943 1.861a.625.625 0 1 0 .864-.902l-3-2.875Z"/>
+  </g>
+  <defs>
+    <clipPath id="Point-Up-Recolorable-16_svg__a">
+      <path fill="#fff" d="M0 0h16v16H0z"/>
+    </clipPath>
+  </defs>
+</svg>
