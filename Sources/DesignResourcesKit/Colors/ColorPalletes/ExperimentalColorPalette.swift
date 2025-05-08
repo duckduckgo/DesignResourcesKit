@@ -31,7 +31,6 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
     private static let xF9F9F9 = Color(0xF9F9F9)
 
     private static let urlBar = DynamicColor(lightColor: .white, darkColor: x404145)
-    private static let container = DynamicColor(lightColor: .gray40.opacity(0.4), darkColor: .tint(0.12))
 
     private static let surface = DynamicColor(lightColor: xF9F9F9, darkColor: x333538)
     private static let backdrop = DynamicColor(lightColor: xE0E0E0, darkColor: x141415)
@@ -72,12 +71,12 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
         case .backdrop: return backdrop
         case .panel: return background
         case .surface: return surface
-        case .container: return container
+        case .container: return controlsFillPrimary // Using controlsFillPrimary here is intentional (container is deprecated)
         case .icons: return icons
         case .iconsSecondary: return iconsSecondary
         case .textPrimary: return textPrimary
         case .lines: return lines
-        case .variousIPadTabs: return backdrop // Using backdrop here is intentional
+        case .variousIPadTabs: return backdrop // Using backdrop here is intentional (variousIPadTabs is deprecated)
         case .shadowPrimary: return shadowPrimary
         case .shadowSecondary: return shadowSecondary
         case .shadowTertiary: return shadowTertiary
