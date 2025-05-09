@@ -20,51 +20,46 @@ import SwiftUI
 
 struct ExperimentalColorPalette: ColorPaletteDefinition {
 
-    private static let xE9EBEC = Color(0xE9EBEC)
-    private static let x27282A = Color(0x27282A)
-    private static let xF4F5F6 = Color(0xF4F5F6)
-    private static let x333538 = Color(0x333538)
-    private static let xF9FAFA = Color(0xF9FAFA)
-    private static let x404145 = Color(0x404145)
-    private static let x1C1F21 = Color(0x1C1F21)
-    private static let xF9F9F9 = Color(0xF9F9F9)
-    private static let xDCDEE0 = Color(0xDCDEE0)
+    private static let x1F1F1F = Color(0x1F1F1F)
     private static let x141415 = Color(0x141415)
     private static let x181818 = Color(0x181818)
+    private static let x27282A = Color(0x27282A)
+    private static let x333538 = Color(0x333538)
+    private static let x404145 = Color(0x404145)
+    private static let xE0E0E0 = Color(0xE0E0E0)
+    private static let xF2F2F2 = Color(0xF2F2F2)
+    private static let xF9F9F9 = Color(0xF9F9F9)
 
-    private static let urlBar = DynamicColor(lightColor: xF9FAFA, darkColor: x404145)
-    private static let container = DynamicColor(lightColor: .gray40.opacity(0.4), darkColor: .tint(0.12))
+    private static let urlBar = DynamicColor(lightColor: .white, darkColor: x404145)
 
-    private static let surface = DynamicColor(lightColor: xF4F5F6, darkColor: x333538)
-    private static let background = DynamicColor(lightColor: xE9EBEC, darkColor: x27282A)
-    private static let backgroundTertiary = DynamicColor(lightColor: xF9FAFA, darkColor: x404145)
-    private static let backgroundSheets = DynamicColor(lightColor: xF4F5F6, darkColor: x333538)
+    private static let surface = DynamicColor(lightColor: xF9F9F9, darkColor: x333538)
+    private static let backdrop = DynamicColor(lightColor: xE0E0E0, darkColor: x141415)
+    private static let background = DynamicColor(lightColor: xF2F2F2, darkColor: x27282A)
+    private static let backgroundTertiary = DynamicColor(lightColor: .white, darkColor: x404145)
+    private static let backgroundSheets = DynamicColor(lightColor: xF9F9F9, darkColor: x333538)
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
     // Shadow
-    private static let shadowPrimary = DynamicColor(lightColor: x1C1F21.opacity(0.04), darkColor: x181818.opacity(0.16))
-    private static let shadowSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.08), darkColor: x181818.opacity(0.24))
-    private static let shadowTertiary = DynamicColor(lightColor: x1C1F21.opacity(0.24), darkColor: x181818.opacity(0.48))
+    private static let shadowPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.04), darkColor: x181818.opacity(0.16))
+    private static let shadowSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.08), darkColor: x181818.opacity(0.24))
+    private static let shadowTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.24), darkColor: x181818.opacity(0.48))
 
     // Controls
-    private static let controlsFillPrimary = DynamicColor(lightColor: x1C1F21.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
-    private static let controlsFillSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.12), darkColor: xF9F9F9.opacity(0.18))
-    private static let controlsFillTertiary = DynamicColor(lightColor: x1C1F21.opacity(0.18), darkColor: xF9F9F9.opacity(0.24))
+    private static let controlsFillPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
+    private static let controlsFillSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.12), darkColor: xF9F9F9.opacity(0.18))
+    private static let controlsFillTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.18), darkColor: xF9F9F9.opacity(0.24))
 
     // Icons
-    private static let icons = DynamicColor(lightColor: x1C1F21.opacity(0.84), darkColor: .tint(0.84))
-    private static let iconsSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.6), darkColor: .tint(0.6))
+    private static let icons = DynamicColor(lightColor: x1F1F1F.opacity(0.84), darkColor: .tint(0.78))
+    private static let iconsSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.6), darkColor: .tint(0.48))
 
     // Text
-    private static let textPrimary = DynamicColor(lightColor: x1C1F21, darkColor: .tint(0.9))
-    private static let textSecondary = DynamicColor(lightColor: x1C1F21.opacity(0.72), darkColor: .tint(0.6))
-    private static let textPlaceholder = DynamicColor(lightColor: x1C1F21.opacity(0.4), darkColor: .tint(0.4))
+    private static let textPrimary = DynamicColor(lightColor: x1F1F1F, darkColor: .tint(0.9))
+    private static let textSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.72), darkColor: .tint(0.6))
+    private static let textPlaceholder = DynamicColor(lightColor: x1F1F1F.opacity(0.4), darkColor: .tint(0.4))
 
     // System
-    private static let lines = DynamicColor(lightColor: x1C1F21.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
-
-    // Various
-    private static let variousIPadTabs = DynamicColor(lightColor: xDCDEE0, darkColor: x141415)
+    private static let lines = DynamicColor(lightColor: x1F1F1F.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
 
     static func dynamicColor(for color: DesignSystemColor) -> DynamicColor {
         switch color {
@@ -73,14 +68,15 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
         case .backgroundTertiary: return backgroundTertiary
         case .backgroundSheets: return backgroundSheets
         case .backgroundBlur: return backgroundBlur
+        case .backdrop: return backdrop
         case .panel: return background
         case .surface: return surface
-        case .container: return container
+        case .container: return controlsFillPrimary // Using controlsFillPrimary here is intentional (container is deprecated)
         case .icons: return icons
         case .iconsSecondary: return iconsSecondary
         case .textPrimary: return textPrimary
         case .lines: return lines
-        case .variousIPadTabs: return variousIPadTabs
+        case .variousIPadTabs: return backdrop // Using backdrop here is intentional (variousIPadTabs is deprecated)
         case .shadowPrimary: return shadowPrimary
         case .shadowSecondary: return shadowSecondary
         case .shadowTertiary: return shadowTertiary
