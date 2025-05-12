@@ -1,7 +1,7 @@
 //
-//  DesignSystemImageResources.swift
+//  ImageResources+Glyphs.swift
 //
-//  Copyright © 2021 DuckDuckGo. All rights reserved.
+//  Copyright © 2025 DuckDuckGo. All rights reserved.
 //
 //  Licensed under the Apache License, Version 2.0 (the "License");
 //  you may not use this file except in compliance with the License.
@@ -336,12 +336,6 @@ extension ImageResource {
             static var videoSolid: ImageResource { return .videoSolid24 }
             static var viewGrid: ImageResource { return .viewGrid24 }
             static var zoomIn: ImageResource { return .zoomIn24 }
-        }
-    }
-
-    enum Colored {
-        enum Size24 {
-            static var appearance: ImageResource { return .appearanceColor24 }
         }
     }
 }
