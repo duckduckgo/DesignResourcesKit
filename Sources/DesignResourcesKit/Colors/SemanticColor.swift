@@ -27,11 +27,16 @@ public enum DesignSystemColor {
     case surface
     case backgroundSheets
     case panel
+
+    @available(*, deprecated, message: "Use controlsFillPrimary or consult designers")
     case container
+
     case urlBar
 
     // Various
+    @available(*, deprecated, message: "Use backdrop or consult designers")
     case variousIPadTabs
+
     case variousOutline
     case backdrop
     case backgroundBlur
@@ -40,7 +45,11 @@ public enum DesignSystemColor {
     /// - warning: This color should be used in experimental palette only until it's fully adopted.
     /// Using it with default palette fires assertion.
     case shadowPrimary
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
     case shadowSecondary
+    /// - warning: This color should be used in experimental palette only until it's fully adopted.
+    /// Using it with default palette fires assertion.
     case shadowTertiary
 
     // Text
