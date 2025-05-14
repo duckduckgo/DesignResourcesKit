@@ -16,11 +16,9 @@
 //  limitations under the License.
 //
 
-import DeveloperToolsSupport
-
 public extension DesignSystemImages {
     enum Color {
-        enum Size16 {
+        public enum Size16 {
             public static var accessibility: DesignSystemImage { .init(resource: .accessibilityColor16) }
             public static var addToDock: DesignSystemImage { .init(resource: .addToDockColor16) }
             public static var adsBlocked: DesignSystemImage { .init(resource: .adsBlockedColor16) }
@@ -104,7 +102,7 @@ public extension DesignSystemImages {
             public static var vpnGray: DesignSystemImage { .init(resource: .vpnGrayColor16) }
         }
 
-        enum Size24 {
+        public enum Size24 {
             public static var accessibility: DesignSystemImage { .init(resource: .accessibilityColor24) }
             public static var add: DesignSystemImage { .init(resource: .addColor24) }
             public static var addToDock: DesignSystemImage { .init(resource: .addToDockColor24) }
