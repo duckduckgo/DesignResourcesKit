@@ -308,6 +308,7 @@ public extension DesignSystemImages {
             public static var fireSolid: DesignSystemImage { .init(resource: .fireSolid24) }
             public static var fireproof: DesignSystemImage { .init(resource: .fireproof24) }
             public static var fireproof1: DesignSystemImage { .init(resource: .fireproof241) }
+            public static var folder: DesignSystemImage { .init(resource: .folder24) }
             public static var folderAdd: DesignSystemImage { .init(resource: .folderAdd24) }
             public static var folderGoTo: DesignSystemImage { .init(resource: .folderGoTo24) }
             public static var folderMove: DesignSystemImage { .init(resource: .folderMove24) }
