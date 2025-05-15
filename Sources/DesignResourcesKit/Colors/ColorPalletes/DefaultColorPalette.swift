@@ -182,6 +182,8 @@ struct DefaultColorPalette: ColorPaletteDefinition {
         case .downloadProgressBarBackground: return DynamicColor(lightColor: .gray85, darkColor: .gray70)
         case .privacyDashboardBackground:
             return DynamicColor(lightColor: surface.lightColor, darkColor: background.darkColor)
+        case .duckPlayerPillBackground:
+            return DynamicColor(lightColor: surface.lightColor, darkColor: .tint(0.12))
         }
     }
 }
