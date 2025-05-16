@@ -276,8 +276,10 @@ public extension DesignSystemImages {
             public static var bookmarkNew: DesignSystemImage { .init(resource: .bookmarkNew24) }
             public static var bookmarkRecolorable: DesignSystemImage { .init(resource: .bookmarkRecolorable24) }
             public static var bookmarksList: DesignSystemImage { .init(resource: .bookmarksList24) }
+            public static var bookmarksOpen: DesignSystemImage { .init(resource: .bookmarksOpen24) }
             public static var calendar: DesignSystemImage { .init(resource: .calendar24) }
             public static var card: DesignSystemImage { .init(resource: .card24) }
+            public static var checkRecolorable: DesignSystemImage { .init(resource: .checkRecolorable24) }
             public static var checkCircle: DesignSystemImage { .init(resource: .checkCircle24) }
             public static var chevronCircleDown: DesignSystemImage { .init(resource: .chevronCircleDown24) }
             public static var chevronDown: DesignSystemImage { .init(resource: .chevronDown24) }
@@ -286,11 +288,13 @@ public extension DesignSystemImages {
             public static var chevronRightSmall: DesignSystemImage { .init(resource: .chevronRight24Small) }
             public static var chevronUpSmall: DesignSystemImage { .init(resource: .chevronUp24Small) }
             public static var close: DesignSystemImage { .init(resource: .close24) }
+            public static var closeCircleSmall: DesignSystemImage { .init(resource: .closeCircleSmall24) }
             public static var clear: DesignSystemImage { .init(resource: .clear24) }
             public static var cookie: DesignSystemImage { .init(resource: .cookie24) }
             public static var cookieWhole: DesignSystemImage { .init(resource: .cookieWhole24) }
             public static var copy: DesignSystemImage { .init(resource: .copy24) }
             public static var covid: DesignSystemImage { .init(resource: .covid24) }
+            public static var crossRecolorable: DesignSystemImage { .init(resource: .crossRecolorable24) }
             public static var crossSolidSmall: DesignSystemImage { .init(resource: .crossSolidSmall24) }
             public static var cut: DesignSystemImage { .init(resource: .cut24) }
             public static var deviceMobileDouble: DesignSystemImage { .init(resource: .deviceMobileDouble24) }
@@ -355,6 +359,7 @@ public extension DesignSystemImages {
             public static var settings: DesignSystemImage { .init(resource: .settings24) }
             public static var shareAndroid: DesignSystemImage { .init(resource: .shareAndroid24) }
             public static var shareApple: DesignSystemImage { .init(resource: .shareApple24) }
+            public static var shortcut: DesignSystemImage { .init(resource: .shortcut24) }
             public static var sortAccending: DesignSystemImage { .init(resource: .sortAccending24) }
             public static var subItem: DesignSystemImage { .init(resource: .subItem24) }
             public static var subItemRecolorable: DesignSystemImage { .init(resource: .subItemRecolorable24) }
