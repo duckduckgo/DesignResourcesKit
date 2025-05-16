@@ -137,6 +137,10 @@ public extension DesignSystemImages {
             public static var feedbackAlert: DesignSystemImage { .init(resource: .feedbackAlert16) }
             public static var findSearch: DesignSystemImage { .init(resource: .findSearch16) }
             public static var fireproof: DesignSystemImage { .init(resource: .fireproof16) }
+            public static var folder: DesignSystemImage { .init(resource: .folder16) }
+            public static var folderDownloads: DesignSystemImage { .init(resource: .folderDownloads16) }
+            public static var folderGoto: DesignSystemImage { .init(resource: .folderGoto16) }
+            public static var folderMove: DesignSystemImage { .init(resource: .folderMove16) }
             public static var folderNew: DesignSystemImage { .init(resource: .folderNew16) }
             public static var gift: DesignSystemImage { .init(resource: .gift16) }
             public static var hourglass: DesignSystemImage { .init(resource: .hourglass16) }
