@@ -24,4 +24,5 @@ public enum SingleUseColor {
     case unifiedFeedbackFieldBackground
     case downloadProgressBarBackground
     case privacyDashboardBackground
+    case duckPlayerPillBackground
 }
