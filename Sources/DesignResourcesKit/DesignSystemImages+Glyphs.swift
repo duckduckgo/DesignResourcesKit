@@ -87,6 +87,8 @@ public extension DesignSystemImages {
             public static var alert: DesignSystemImage { .init(resource: .alert16) }
             public static var alertRecolorable: DesignSystemImage { .init(resource: .alertRecolorable16) }
             public static var arrowCircleRight: DesignSystemImage { .init(resource: .arrowCircleRight16) }
+            public static var arrowCircleDownLeft: DesignSystemImage { .init(resource: .arrowCircleDownLeft16) }
+            public static var arrowCircleUpLeft: DesignSystemImage { .init(resource: .arrowCircleUpLeft16) }
             public static var arrowDown: DesignSystemImage { .init(resource: .arrowDown16) }
             public static var arrowUp: DesignSystemImage { .init(resource: .arrowUp16) }
             public static var assistAlt: DesignSystemImage { .init(resource: .assistAlt16) }
