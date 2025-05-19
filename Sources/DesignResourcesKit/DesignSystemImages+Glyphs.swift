@@ -53,6 +53,7 @@ public extension DesignSystemImages {
             public static var info: DesignSystemImage { .init(resource: .info12) }
             public static var infoSolid: DesignSystemImage { .init(resource: .infoSolid12) }
             public static var location: DesignSystemImage { .init(resource: .location12) }
+            public static var lockSolid: DesignSystemImage { .init(resource: .lockSolid12) }
             public static var maps: DesignSystemImage { .init(resource: .maps12) }
             public static var network: DesignSystemImage { .init(resource: .network12) }
             public static var night: DesignSystemImage { .init(resource: .night12) }
@@ -95,6 +96,7 @@ public extension DesignSystemImages {
             public static var bookmarkAdd: DesignSystemImage { .init(resource: .bookmarkAdd16) }
             public static var bookmarkAll: DesignSystemImage { .init(resource: .bookmarkAll16) }
             public static var bookmarkFavorite: DesignSystemImage { .init(resource: .bookmarkFavorite16) }
+            public static var bookmarks: DesignSystemImage { .init(resource: .bookmarks16) }
             public static var bookmarkSolid: DesignSystemImage { .init(resource: .bookmarkSolid16) }
             public static var bookmarksSolid: DesignSystemImage { .init(resource: .bookmarksSolid16) }
             public static var browser: DesignSystemImage { .init(resource: .browser16) }
@@ -136,7 +138,10 @@ public extension DesignSystemImages {
             public static var feedback: DesignSystemImage { .init(resource: .feedback16) }
             public static var feedbackAlert: DesignSystemImage { .init(resource: .feedbackAlert16) }
             public static var findSearch: DesignSystemImage { .init(resource: .findSearch16) }
+            public static var fire: DesignSystemImage { .init(resource: .fire16) }
+            public static var fireSolid: DesignSystemImage { .init(resource: .fireSolid16) }
             public static var fireproof: DesignSystemImage { .init(resource: .fireproof16) }
+            public static var fireproofSolid: DesignSystemImage { .init(resource: .fireproofSolid16) }
             public static var folder: DesignSystemImage { .init(resource: .folder16) }
             public static var folderDownloads: DesignSystemImage { .init(resource: .folderDownloads16) }
             public static var folderGoto: DesignSystemImage { .init(resource: .folderGoto16) }
@@ -151,6 +156,7 @@ public extension DesignSystemImages {
             public static var infoRecolorable: DesignSystemImage { .init(resource: .infoRecolorable16) }
             public static var jump: DesignSystemImage { .init(resource: .jump16) }
             public static var jumpRecolorable: DesignSystemImage { .init(resource: .jumpRecolorable16) }
+            public static var keyLogin: DesignSystemImage { .init(resource: .keyLogin16) }
             public static var linkRecolorable: DesignSystemImage { .init(resource: .linkRecolorable16) }
             public static var lock: DesignSystemImage { .init(resource: .lock16) }
             public static var locationSolid: DesignSystemImage { .init(resource: .locationSolid16) }
@@ -175,6 +181,7 @@ public extension DesignSystemImages {
             public static var shareApple: DesignSystemImage { .init(resource: .shareApple16) }
             public static var shield: DesignSystemImage { .init(resource: .shield16) }
             public static var shieldAlertAlt: DesignSystemImage { .init(resource: .shieldAlertAlt16) }
+            public static var shieldBlocked: DesignSystemImage { .init(resource: .shieldBlocked16) }
             public static var sidebar: DesignSystemImage { .init(resource: .sidebar16) }
             public static var sidebarSearch: DesignSystemImage { .init(resource: .sidebarSearch16) }
             public static var siteBreakage: DesignSystemImage { .init(resource: .siteBreakage16) }
@@ -265,6 +272,7 @@ public extension DesignSystemImages {
             public static var addition: DesignSystemImage { .init(resource: .addition24) }
             public static var aiChat: DesignSystemImage { .init(resource: .aiChat24) }
             public static var aiChatAddSolid: DesignSystemImage { .init(resource: .aiChatAddSolid24) }
+            public static var alertRecolorable: DesignSystemImage { .init(resource: .alertRecolorable24) }
             public static var arrowCircleUpLeft: DesignSystemImage { .init(resource: .arrowCircleUpLeft24) }
             public static var arrowDownLeft: DesignSystemImage { .init(resource: .arrowDownLeft24) }
             public static var arrowDownRight: DesignSystemImage { .init(resource: .arrowDownRight24) }
@@ -308,6 +316,7 @@ public extension DesignSystemImages {
             public static var duckDuckGoDaxColor: DesignSystemImage { .init(resource: .duckDuckGoDaxColor24) }
             public static var duckDuckGoDaxGreyscale: DesignSystemImage { .init(resource: .duckDuckGoDaxGreyscale24) }
             public static var edit: DesignSystemImage { .init(resource: .edit24) }
+            public static var email: DesignSystemImage { .init(resource: .email24) }
             public static var emailCheck: DesignSystemImage { .init(resource: .emailCheck24) }
             public static var emailForward: DesignSystemImage { .init(resource: .emailForward24) }
             public static var eye: DesignSystemImage { .init(resource: .eye24) }
@@ -361,6 +370,7 @@ public extension DesignSystemImages {
             public static var reset: DesignSystemImage { .init(resource: .reset24) }
             public static var resetSites: DesignSystemImage { .init(resource: .resetSites24) }
             public static var settings: DesignSystemImage { .init(resource: .settings24) }
+            public static var shapeCircle: DesignSystemImage { .init(resource: .shapeCircle24) }
             public static var shareAndroid: DesignSystemImage { .init(resource: .shareAndroid24) }
             public static var shareApple: DesignSystemImage { .init(resource: .shareApple24) }
             public static var shortcut: DesignSystemImage { .init(resource: .shortcut24) }
