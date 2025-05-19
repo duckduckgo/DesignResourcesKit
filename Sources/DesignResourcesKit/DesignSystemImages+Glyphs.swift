@@ -198,6 +198,7 @@ public extension DesignSystemImages {
             public static var tabReopen: DesignSystemImage { .init(resource: .tabReopen16) }
             public static var tabTop: DesignSystemImage { .init(resource: .tabTop16) }
             public static var thumbsUp: DesignSystemImage { .init(resource: .thumbsUp16) }
+            public static var trash: DesignSystemImage { .init(resource: .trash16) }
             public static var typeSize: DesignSystemImage { .init(resource: .typeSize16) }
             public static var videoSolid: DesignSystemImage { .init(resource: .videoSolid16) }
             public static var viewGrid: DesignSystemImage { .init(resource: .viewGrid16) }
