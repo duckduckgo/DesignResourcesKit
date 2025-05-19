@@ -189,6 +189,7 @@ public extension DesignSystemImages {
             public static var siteBreakage: DesignSystemImage { .init(resource: .siteBreakage16) }
             public static var skipRecolorable: DesignSystemImage { .init(resource: .skipRecolorable16) }
             public static var sortAscending: DesignSystemImage { .init(resource: .sortAscending16) }
+            public static var sortDescending: DesignSystemImage { .init(resource: .sortDescending16) }
             public static var sortManually: DesignSystemImage { .init(resource: .sortManually16) }
             public static var support: DesignSystemImage { .init(resource: .support16) }
             public static var sync: DesignSystemImage { .init(resource: .sync16) }
