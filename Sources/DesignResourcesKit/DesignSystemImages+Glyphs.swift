@@ -145,6 +145,7 @@ public extension DesignSystemImages {
             public static var favoriteSolid: DesignSystemImage { .init(resource: .favoriteSolid16) }
             public static var feedback: DesignSystemImage { .init(resource: .feedback16) }
             public static var feedbackAlert: DesignSystemImage { .init(resource: .feedbackAlert16) }
+            public static var feedbackBlank: DesignSystemImage { .init(resource: .feedbackBlank16) }
             public static var findSearch: DesignSystemImage { .init(resource: .findSearch16) }
             public static var fire: DesignSystemImage { .init(resource: .fire16) }
             public static var fireSolid: DesignSystemImage { .init(resource: .fireSolid16) }
@@ -177,6 +178,7 @@ public extension DesignSystemImages {
             public static var menuLinesDot: DesignSystemImage { .init(resource: .menuLinesDot16) }
             public static var microphoneBlocked: DesignSystemImage { .init(resource: .microphoneBlocked16) }
             public static var options: DesignSystemImage { .init(resource: .options16) }
+            public static var paste: DesignSystemImage { .init(resource: .paste16) }
             public static var pin: DesignSystemImage { .init(resource: .pin16) }
             public static var platformApple: DesignSystemImage { .init(resource: .platformApple16) }
             public static var platformMacOS: DesignSystemImage { .init(resource: .platformMacOS16) }
@@ -307,6 +309,8 @@ public extension DesignSystemImages {
             public static var arrowUpRight: DesignSystemImage { .init(resource: .arrowUpRight24) }
             public static var assistAlt: DesignSystemImage { .init(resource: .assistAlt24) }
             public static var bell: DesignSystemImage { .init(resource: .bell24) }
+            public static var bookmark: DesignSystemImage { .init(resource: .bookmark24) }
+            public static var bookmarkFavorite: DesignSystemImage { .init(resource: .bookmarkFavorite24) }
             public static var bookmarks: DesignSystemImage { .init(resource: .bookmarks24) }
             public static var bookmarkNew: DesignSystemImage { .init(resource: .bookmarkNew24) }
             public static var bookmarkRecolorable: DesignSystemImage { .init(resource: .bookmarkRecolorable24) }
@@ -332,7 +336,10 @@ public extension DesignSystemImages {
             public static var crossRecolorable: DesignSystemImage { .init(resource: .crossRecolorable24) }
             public static var crossSolidSmall: DesignSystemImage { .init(resource: .crossSolidSmall24) }
             public static var cut: DesignSystemImage { .init(resource: .cut24) }
+            public static var deviceDesktop: DesignSystemImage { .init(resource: .deviceDesktop24) }
+            public static var deviceMobile: DesignSystemImage { .init(resource: .deviceMobile24) }
             public static var deviceMobileDouble: DesignSystemImage { .init(resource: .deviceMobileDouble24) }
+            public static var deviceTablet: DesignSystemImage { .init(resource: .deviceTablet24) }
             public static var documentNew: DesignSystemImage { .init(resource: .documentNew24) }
             public static var documentReplace: DesignSystemImage { .init(resource: .documentReplace24) }
             public static var downloads: DesignSystemImage { .init(resource: .downloads24) }
