@@ -177,6 +177,7 @@ public extension DesignSystemImages {
             public static var menuLines: DesignSystemImage { .init(resource: .menuLines16) }
             public static var menuLinesDot: DesignSystemImage { .init(resource: .menuLinesDot16) }
             public static var microphoneBlocked: DesignSystemImage { .init(resource: .microphoneBlocked16) }
+            public static var openIn: DesignSystemImage { .init(resource: .openIn16) }
             public static var options: DesignSystemImage { .init(resource: .options16) }
             public static var paste: DesignSystemImage { .init(resource: .paste16) }
             public static var pin: DesignSystemImage { .init(resource: .pin16) }
