@@ -113,6 +113,7 @@ public extension DesignSystemImages {
             public static var clear: DesignSystemImage { .init(resource: .clear16) }
             public static var clearSolid: DesignSystemImage { .init(resource: .clearSolid16) }
             public static var close: DesignSystemImage { .init(resource: .close16) }
+            public static var closeOutline: DesignSystemImage { .init(resource: .closeOutline16) }
             public static var closeSolidAlt: DesignSystemImage { .init(resource: .closeSolidAlt16) }
             public static var cookie: DesignSystemImage { .init(resource: .cookie16) }
             public static var cookieWhole: DesignSystemImage { .init(resource: .cookieWhole16) }
