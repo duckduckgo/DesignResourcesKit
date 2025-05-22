@@ -147,6 +147,7 @@ public extension DesignSystemImages {
             public static var feedback: DesignSystemImage { .init(resource: .feedback16) }
             public static var feedbackAlert: DesignSystemImage { .init(resource: .feedbackAlert16) }
             public static var feedbackBlank: DesignSystemImage { .init(resource: .feedbackBlank16) }
+            public static var findInPage: DesignSystemImage { .init(resource: .findInPage16) }
             public static var findSearch: DesignSystemImage { .init(resource: .findSearch16) }
             public static var fire: DesignSystemImage { .init(resource: .fire16) }
             public static var fireSolid: DesignSystemImage { .init(resource: .fireSolid16) }
@@ -167,6 +168,7 @@ public extension DesignSystemImages {
             public static var imageCopy: DesignSystemImage { .init(resource: .imageCopy16) }
             public static var imageLink: DesignSystemImage { .init(resource: .imageLink16) }
             public static var `import`: DesignSystemImage { .init(resource: .import16) }
+            public static var importLeft: DesignSystemImage { .init(resource: .importLeft16) }
             public static var info: DesignSystemImage { .init(resource: .info16) }
             public static var infoRecolorable: DesignSystemImage { .init(resource: .infoRecolorable16) }
             public static var jump: DesignSystemImage { .init(resource: .jump16) }
@@ -336,6 +338,7 @@ public extension DesignSystemImages {
             public static var cookieWhole: DesignSystemImage { .init(resource: .cookieWhole24) }
             public static var copy: DesignSystemImage { .init(resource: .copy24) }
             public static var covid: DesignSystemImage { .init(resource: .covid24) }
+            public static var creditCard: DesignSystemImage { .init(resource: .creditCard24) }
             public static var crossRecolorable: DesignSystemImage { .init(resource: .crossRecolorable24) }
             public static var crossSolidSmall: DesignSystemImage { .init(resource: .crossSolidSmall24) }
             public static var cut: DesignSystemImage { .init(resource: .cut24) }
