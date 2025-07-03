@@ -46,9 +46,9 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
     // Shadow
-    private static let shadowPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.04), darkColor: Color.black.opacity(0.16))
-    private static let shadowSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.08), darkColor: Color.black.opacity(0.24))
-    private static let shadowTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.24), darkColor: Color.black.opacity(0.48))
+    private static let shadowPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.04), darkColor: .shade(0.16))
+    private static let shadowSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.08), darkColor: .shade(0.24))
+    private static let shadowTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.24), darkColor: .shade(0.48))
 
     // Controls
     private static let controlsFillPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
@@ -56,13 +56,13 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
     private static let controlsFillTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.18), darkColor: xF9F9F9.opacity(0.24))
 
     // Icons
-    private static let icons = DynamicColor(lightColor: x1F1F1F.opacity(0.84), darkColor: Color.white.opacity(0.78))
-    private static let iconsSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.6), darkColor: Color.white.opacity(0.48))
+    private static let icons = DynamicColor(lightColor: x1F1F1F.opacity(0.84), darkColor: .tint(0.78))
+    private static let iconsSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.6), darkColor: .tint(0.48))
 
     // Text
-    private static let textPrimary = DynamicColor(lightColor: x1F1F1F, darkColor: Color.white.opacity(0.9))
-    private static let textSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.72), darkColor: Color.white.opacity(0.6))
-    private static let textPlaceholder = DynamicColor(lightColor: x1F1F1F.opacity(0.4), darkColor: Color.white.opacity(0.4))
+    private static let textPrimary = DynamicColor(lightColor: x1F1F1F, darkColor: .tint(0.9))
+    private static let textSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.72), darkColor: .tint(0.6))
+    private static let textPlaceholder = DynamicColor(lightColor: x1F1F1F.opacity(0.4), darkColor: .tint(0.4))
 
     // System
     private static let lines = DynamicColor(lightColor: x1F1F1F.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
