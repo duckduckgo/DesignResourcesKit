@@ -30,19 +30,25 @@ struct ExperimentalColorPalette: ColorPaletteDefinition {
     private static let xF2F2F2 = Color(0xF2F2F2)
     private static let xF9F9F9 = Color(0xF9F9F9)
 
-    private static let urlBar = DynamicColor(lightColor: .white, darkColor: x404145)
+    // New dark mode colors
+    private static let x080808 = Color(0x080808)
+    private static let x282828 = Color(0x282828)
+    private static let x373737 = Color(0x373737)
+    private static let x474747 = Color(0x474747)
 
-    private static let surface = DynamicColor(lightColor: xF9F9F9, darkColor: x333538)
-    private static let backdrop = DynamicColor(lightColor: xE0E0E0, darkColor: x141415)
-    private static let background = DynamicColor(lightColor: xF2F2F2, darkColor: x27282A)
-    private static let backgroundTertiary = DynamicColor(lightColor: .white, darkColor: x404145)
-    private static let backgroundSheets = DynamicColor(lightColor: xF9F9F9, darkColor: x333538)
+    private static let urlBar = DynamicColor(lightColor: .white, darkColor: x474747)
+
+    private static let surface = DynamicColor(lightColor: xF9F9F9, darkColor: x373737)
+    private static let backdrop = DynamicColor(lightColor: xE0E0E0, darkColor: x080808)
+    private static let background = DynamicColor(lightColor: xF2F2F2, darkColor: x282828)
+    private static let backgroundTertiary = DynamicColor(lightColor: .white, darkColor: x474747)
+    private static let backgroundSheets = DynamicColor(lightColor: xF9F9F9, darkColor: x373737)
     private static let backgroundBlur = DynamicColor(staticColor: .gray90.opacity(0.7))
 
     // Shadow
-    private static let shadowPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.04), darkColor: x181818.opacity(0.16))
-    private static let shadowSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.08), darkColor: x181818.opacity(0.24))
-    private static let shadowTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.24), darkColor: x181818.opacity(0.48))
+    private static let shadowPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.04), darkColor: .shade(0.16))
+    private static let shadowSecondary = DynamicColor(lightColor: x1F1F1F.opacity(0.08), darkColor: .shade(0.24))
+    private static let shadowTertiary = DynamicColor(lightColor: x1F1F1F.opacity(0.24), darkColor: .shade(0.48))
 
     // Controls
     private static let controlsFillPrimary = DynamicColor(lightColor: x1F1F1F.opacity(0.09), darkColor: xF9F9F9.opacity(0.12))
