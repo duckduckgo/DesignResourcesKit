@@ -1,5 +1,9 @@
 # DesignResourcesKit
 
+> [!IMPORTANT]  
+> 👋 Thanks for your interest in DuckDuckGo! The source code for this project has been moved to [duckduckgo/apple-browsers](https://github.com/duckduckgo/apple-browsers) and this repo no longer accepts contributions.
+> Please file any bug reports or feature requests in the new repo.
+
 ## What is it?
 `DesignResourcesKit` is a narrowly scoped Swift package containing the implementation of design system elements for iOS and macOS apps. This currently only includes colors and typography. 
 See the full documentation here: https://app.asana.com/0/1202500774821704/1204423793264693/f  
